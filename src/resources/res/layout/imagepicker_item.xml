@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_uploaditem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imvPhoto" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip" android:scaleType="centerCrop" android:contentDescription="@string/str_desImg" />
+    <ImageButton android:id="@id/btnRemove" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_delete3" android:contentDescription="@string/str_desImg" />
+</RelativeLayout>

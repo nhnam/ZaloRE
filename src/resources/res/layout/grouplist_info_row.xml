@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="fill_horizontal|center" android:orientation="horizontal" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/item_list_default_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/gray_talk" android:id="@id/btn_remove_member_group" android:background="@drawable/btn_default_center" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="40.0dip" android:text="@string/delete" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_contact_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toLeftOf="@id/btn_remove_member_group" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/buddy_dp" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/default_avatar" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/itemlist_text" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/constant_Contact" android:lines="1" android:singleLine="true" />
+    </LinearLayout>
+</RelativeLayout>

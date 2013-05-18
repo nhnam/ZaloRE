@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layoutGroup" android:background="@drawable/bg_footer" android:padding="4.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/buddy_dp" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:src="@drawable/avatar_groupchat" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" style="@style/myImageView" />
+        <LinearLayout android:orientation="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:id="@id/groupName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/tv_groupName" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/groupCreatername" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/tv_creatergroupName" android:lines="1" android:singleLine="true" android:drawableLeft="@drawable/ic_grpkey" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/groupinfo_header_layout_btn_inviting" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:baselineAligned="false" android:weightSum="1.0">
+        <LinearLayout android:gravity="center" android:id="@id/groupinfo_header_layout_btn_inviting_agree" android:background="@drawable/bg_btn_profile_left" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:layout_weight="0.5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_group_info_inviting_agree" android:drawableLeft="@drawable/ic_grpaccept" android:drawablePadding="8.0dip" style="@style/Feeditem_main_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/groupinfo_header_layout_btn_inviting_disagree" android:background="@drawable/bg_btn_profile_right" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:layout_weight="0.5">
+            <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_group_info_inviting_disagree" android:drawableLeft="@drawable/ic_grpcancel" android:drawablePadding="8.0dip" style="@style/Feeditem_main_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/groupinfo_header_layout_btn_action" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" android:baselineAligned="false" android:weightSum="1.0">
+        <LinearLayout android:gravity="center" android:id="@id/layoutChat" android:background="@drawable/bg_btn_profile_left" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:layout_weight="0.5">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lo_funcChat" android:drawableLeft="@drawable/ic_profile_nhantin2" android:drawablePadding="8.0dip" style="@style/Feeditem_main_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/layoutInvite" android:background="@drawable/bg_btn_profile_right" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minHeight="30.0dip" android:layout_weight="0.5">
+            <TextView android:gravity="center" android:id="@id/tvInvite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lo_funcInvite" android:drawableLeft="@drawable/ic_profile_ketban2" android:drawablePadding="8.0dip" style="@style/Feeditem_main_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

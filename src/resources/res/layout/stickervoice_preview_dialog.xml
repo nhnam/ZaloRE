@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dialog_header_default" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginTop="3.0dip" android:text="@string/str_titleDefault" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/confirm_content" android:background="@drawable/dialog_center" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.zing.zalo.uicontrol.AnimImageView android:id="@id/sticker_preview_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_stickervoice_right_4" />
+        <com.zing.zalo.uicontrol.GifDecoderView android:id="@id/sticker_preview_animation" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="100.0dip" android:minHeight="100.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialog_footer" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/confirm_btn_yes" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+        <Button android:id="@id/confirm_btn_no" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

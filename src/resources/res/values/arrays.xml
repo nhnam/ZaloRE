@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_themes">
+        <item>Xanh</item>
+        <item>Xám</item>
+    </string-array>
+    <string-array name="array_messagearchive">
+        <item>Xóa khi đăng xuất</item>
+        <item>10 ngày</item>
+        <item>1 tháng</item>
+        <item>3 tháng</item>
+        <item>6 tháng</item>
+    </string-array>
+    <integer-array name="array_codemessagearchive">
+        <item>0</item>
+        <item>10</item>
+        <item>30</item>
+        <item>90</item>
+        <item>120</item>
+    </integer-array>
+    <string-array name="onlinestatus_text">
+        <item>Online</item>
+        <item>Vắng mặt</item>
+    </string-array>
+    <string-array name="onlinestatus_code">
+        <item>NLN</item>
+        <item>HDN</item>
+    </string-array>
+    <string-array name="sex_text">
+        <item>Nam</item>
+        <item>Nữ</item>
+    </string-array>
+    <string-array name="sex_code">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="filter_by_array">
+        <item>A-Z</item>
+        <item>Z-A</item>
+    </string-array>
+    <string-array name="city_array">
+        <item>Tất cả</item>
+        <item>Hồ Chí Minh</item>
+        <item>Hà Nội</item>
+        <item>Hải Phòng</item>
+        <item>Thừa Thiên-Huế</item>
+        <item>Đà Nẵng</item>
+        <item>Cần Thơ</item>
+        <item>An Giang</item>
+        <item>BR - Vũng Tàu</item>
+        <item>Bắc Cạn</item>
+        <item>Bắc Giang</item>
+        <item>Bạc Liêu</item>
+        <item>Bắc Ninh</item>
+        <item>Bến Tre</item>
+        <item>Bình Định</item>
+        <item>Bình Dương</item>
+        <item>Bình Phước</item>
+        <item>Bình Thuận</item>
+        <item>Cà Mau</item>
+        <item>Cao Bằng</item>
+        <item>Đắk Lắk</item>
+        <item>Đắk Nông</item>
+        <item>Điện Biên</item>
+        <item>Đồng Nai</item>
+        <item>Đồng Tháp</item>
+        <item>Gia Lai</item>
+        <item>Hà Giang</item>
+        <item>Hà Nam</item>
+        <item>Hà Tĩnh</item>
+        <item>Hải Dương</item>
+        <item>Hậu Giang</item>
+        <item>Hòa Bình</item>
+        <item>Hưng Yên</item>
+        <item>Khánh Hòa</item>
+        <item>Kiên Giang</item>
+        <item>Kon Tum</item>
+        <item>Lai Châu</item>
+        <item>Lâm Đồng</item>
+        <item>Lạng Sơn</item>
+        <item>Lào Cai</item>
+        <item>Long An</item>
+        <item>Nam Định</item>
+        <item>Nghệ An</item>
+        <item>Ninh Bình</item>
+        <item>Ninh Thuận</item>
+        <item>Phú Thọ</item>
+        <item>Phú Yên</item>
+        <item>Quảng Bình</item>
+        <item>Quảng Nam</item>
+        <item>Quảng Ngãi</item>
+        <item>Quảng Ninh</item>
+        <item>Quảng Trị</item>
+        <item>Sóc Trăng</item>
+        <item>Sơn La</item>
+        <item>Tây Ninh</item>
+        <item>Thái Bình</item>
+        <item>Thái Nguyên</item>
+        <item>Thanh Hóa</item>
+        <item>Tiền Giang</item>
+        <item>Trà Vinh</item>
+        <item>Tuyên Quang</item>
+        <item>Vĩnh Long</item>
+        <item>Vĩnh Phúc</item>
+        <item>Yên Bái</item>
+    </string-array>
+</resources>

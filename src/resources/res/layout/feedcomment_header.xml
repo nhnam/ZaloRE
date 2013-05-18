@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_comment" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:id="@id/imvAvatar" android:layout_width="48.0dip" android:layout_height="48.0dip" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip">
+            <TextView android:id="@id/tvUserName" android:background="@drawable/bg_profile_feed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." style="@style/Feeditem_main_name" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/layoutTime" android:layout_width="fill_parent" android:layout_height="25.0dip">
+                <TextView android:textSize="10.0sp" android:textColor="#ff576478" android:layout_gravity="left|center" android:id="@id/tvTime" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="..." android:layout_weight="1.0" style="@style/Feeditem_main_description" />
+                <ImageButton android:id="@id/ibtnLike" android:background="@drawable/ico_unlike" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" />
+                <TextView android:id="@id/tvLikeInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="0" style="@style/Feeditem_main_description" />
+                <ImageButton android:id="@id/ibtnComment" android:background="@drawable/ico_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:scaleType="fitXY" />
+                <TextView android:id="@id/tvComment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="5.0dip" android:text="0" style="@style/Feeditem_main_description" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip">
+        <com.zing.zalo.control.AspectRatioImageView android:id="@id/imvPhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" android:adjustViewBounds="true" />
+        <TextView android:id="@id/tvMessage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="3.0dip" style="@style/Feeditem_main_content" />
+    </LinearLayout>
+    <TextView android:background="@drawable/bg_grphead_default" android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_tv_comment" style="@style/Profile_tag" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layoutMore" android:background="@color/bg_comment" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="5.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ff466da4" android:gravity="center" android:id="@id/btnLoadMore" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="Xem Thêm" />
+        </LinearLayout>
+        <ProgressBar android:layout_gravity="center" android:id="@id/pbLoadMoreCmt" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@android:style/Widget.ProgressBar.Small.Inverse" />
+    </LinearLayout>
+</LinearLayout>

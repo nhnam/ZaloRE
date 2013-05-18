@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutFuncPrivacy" android:background="@drawable/bg_90alpha" android:paddingLeft="4.0dip" android:paddingTop="4.0dip" android:paddingRight="4.0dip" android:paddingBottom="4.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="3.0">
+        <LinearLayout android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textColor="@color/btn_pivacy_in_top" android:gravity="center" android:id="@id/btnLeftFunc" android:background="@drawable/btn_header_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_func_Add" />
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textColor="@color/btn_pivacy_in_top" android:gravity="center" android:id="@id/btnMiddleFunc" android:background="@drawable/btn_header_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_func_Block" />
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="2.0dip" android:paddingRight="2.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textColor="@color/btn_pivacy_in_top" android:gravity="center" android:id="@id/btnRightFunc" android:background="@drawable/btn_header_privacy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/btn_func_ReportAbuse" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/layoutMessagePrivacy" android:background="@drawable/chat_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tvHintMessagePrivacy" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_hint_not_a_friend" />
+    </LinearLayout>
+    <LinearLayout android:gravity="top" android:id="@id/layoutUserStatus" android:background="@drawable/bg_user_bubble_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="4.0dip">
+        <ImageView android:id="@id/imvUserAvatar" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/default_avatar" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black" android:id="@id/tvUserStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="3" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layoutHistoryLoading" android:padding="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@id/chat_right_progress_upload_voice" android:layout_width="12.0dip" android:layout_height="12.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/loading_history_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_tv_loading" />
+    </LinearLayout>
+</LinearLayout>

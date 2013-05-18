@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/groupinfolist_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_group_info" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_option_menu" android:padding="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_userinfo" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/contactlist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:layout_weight="1.0" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contactlist_empty" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:layout_weight="0.0" android:layout_below="@id/contactlist">
+            <ImageView android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_nofound" android:contentDescription="@string/str_desImg" />
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/gray_333333" android:layout_gravity="top|center" android:id="@id/tv_emptylayout" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/nocontacts" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

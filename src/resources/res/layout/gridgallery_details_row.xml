@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/grid_item_background" android:layout_width="@dimen/grid_image_width" android:layout_height="@dimen/grid_image_hight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/imgView01" android:layout_width="@dimen/grid_image_width" android:layout_height="@dimen/grid_image_hight" android:scaleType="centerCrop" />
+    <ImageView android:id="@id/ivSelected" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_done" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+</RelativeLayout>

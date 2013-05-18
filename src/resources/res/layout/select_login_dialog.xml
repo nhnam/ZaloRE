@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dialog_header_default" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ico_pophead_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_titleDefault" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_select_pic" android:background="@drawable/dialog2_footer_popup" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/btn_zmLogin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/btn_dlgloginZM" android:drawableLeft="@drawable/ic_zing4" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <View android:background="#45545454" android:layout_width="220.0dip" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:id="@id/btn_fbLogin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/btn_dlgloginFB" android:drawableLeft="@drawable/ic_facebook4" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

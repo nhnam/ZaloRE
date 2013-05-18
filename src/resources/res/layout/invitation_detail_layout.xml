@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="3.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_title_friend_request" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_footer" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:clickable="false" android:layout_width="fill_parent" android:layout_height="70.0dip">
+                    <RelativeLayout android:background="@drawable/bg_avatar_frame" android:layout_width="70.0dip" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/buddy_dp" android:layout_width="90.0dip" android:layout_height="90.0dip" android:src="@drawable/default_avatar" android:contentDescription="@string/str_desImg" style="@style/myImageView" />
+                    </RelativeLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <TextView android:textSize="20.0sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Hiep Trung Tran" android:lines="1" android:singleLine="true" />
+                        <TextView android:textSize="12.0sp" android:textColor="@color/white" android:id="@id/txtAge" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="22" android:singleLine="true" android:drawablePadding="5.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="16.0dip" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tvInvitation" android:background="@drawable/bg_profilestatus" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:minHeight="45.0dip" android:maxLength="350" />
+            </LinearLayout>
+            <TextView android:textSize="16.0sp" android:textColor="#ff808080" android:id="@id/tv_desImageGrid" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="16.0dip" android:text="Ảnh đại diện" />
+            <FrameLayout android:orientation="vertical" android:id="@id/layoutgridimg" android:background="@color/bg_feed" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                <LinearLayout android:id="@id/layoutImages" android:focusable="false" android:focusableInTouchMode="false" android:visibility="visible" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+                    <LinearLayout android:id="@id/layoutPreview1" android:background="@drawable/grid_item_background" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <com.zing.zalo.control.AspectRatioImageView android:id="@id/imv_preview1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_image2" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/layoutPreview2" android:background="@drawable/grid_item_background" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <com.zing.zalo.control.AspectRatioImageView android:id="@id/imv_preview2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_image2" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/layoutPreview3" android:background="@drawable/grid_item_background" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_weight="1.0">
+                        <com.zing.zalo.control.AspectRatioImageView android:id="@id/imv_preview3" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_image2" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                    </LinearLayout>
+                    <FrameLayout android:id="@id/layoutPreview4" android:background="@drawable/grid_item_background" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <com.zing.zalo.control.AspectRatioImageView android:id="@id/imv_preview4" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/no_image2" android:scaleType="centerCrop" android:adjustViewBounds="true" />
+                        <TextView android:textSize="30.0sp" android:textColor="#ff9aa2b6" android:layout_gravity="center" android:id="@id/tvMoreImageCount" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </FrameLayout>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center" android:id="@id/img_isLoading" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/attach_gallery_96_white" android:contentDescription="@string/str_desImg" />
+                <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+                <TextView android:textSize="14.0dip" android:textColor="@color/gray_talk" android:layout_gravity="center" android:id="@id/txtemptyAlbum" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_emptyAlbumMobile" />
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                <Button android:textColor="@color/white" android:gravity="center" android:id="@id/btnAcceptInvitation" android:background="@drawable/bgboxsendmessage" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/btn_accept_Invitation" android:layout_weight="0.75" />
+                <Button android:textColor="@color/black" android:gravity="center" android:id="@id/btnRejectInvitation" android:background="@drawable/btn_default_center" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/btn_reject_Invitation" android:layout_weight="0.75" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

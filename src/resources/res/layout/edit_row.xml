@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/edit_row" android:padding="2.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:textColor="@color/black" android:id="@id/cb_selectall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/btn_check" android:text="@string/select_all" />
+    <Button android:id="@id/btn_delete" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/delete" android:singleLine="true" android:layout_weight="0.5" />
+    <Button android:id="@id/btn_cancel" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/cancel" android:singleLine="true" android:layout_weight="0.5" />
+</LinearLayout>

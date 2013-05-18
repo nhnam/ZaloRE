@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/contact_row" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_contact_row" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/item_list_default_minheight">
+        <ImageView android:id="@id/buddy_dp" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="6.0dip" android:src="@drawable/default_avatar" android:contentDescription="@string/str_desImg" style="@style/myImageView" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/lin2" android:fadingEdge="horizontal" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <ImageView android:id="@id/ic_headnext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:layout_toLeftOf="@id/ic_headnext" android:layout_centerVertical="true">
+                <TextView android:textSize="16.0dip" android:textColor="@color/itemlist_text" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_tv_defaultContact" android:lines="1" android:singleLine="true" android:drawablePadding="5.0dip" />
+                <TextView android:id="@id/tvInvitation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_tv_defaultContact" android:lines="1" android:singleLine="true" style="@style/Feeditem_main_description" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

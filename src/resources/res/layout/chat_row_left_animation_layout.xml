@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:id="@id/chat_left_animation_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/chat_left_animation_lo" android:background="@drawable/chat_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/nameSenderGroup" android:layout_gravity="center_vertical" android:id="@id/chat_left_nameSender_animation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="@dimen/maxwidth_namesender_chatcontent" android:maxLines="1" android:singleLine="true" />
+            <com.zing.zalo.uicontrol.GifDecoderView android:id="@id/chat_left_animation" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/sticker_height" android:minHeight="@dimen/sticker_height" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom|left|center" android:id="@id/chat_left_txt_time_animation" android:background="@drawable/chat_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" android:lines="1" />
+        <com.zing.zalo.uicontrol.AnimImageView android:layout_gravity="center_vertical" android:id="@id/chat_left_animation_icon_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_stickervoice_left_4" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/chat_left_icon_status_animation" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="0.9" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/chat_left_doodle_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:background="@drawable/chat_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/nameSenderGroup" android:layout_gravity="center_vertical" android:id="@id/chat_left_nameSender_doodle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="@dimen/maxwidth_namesender_chatcontent" android:maxLines="1" android:singleLine="true" />
+            <ImageView android:layout_gravity="top|left|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_brush" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom" android:id="@id/chat_left_txt_time_doodle" android:background="@drawable/chat_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" />
+        <ImageView android:id="@id/chat_left_icon_status_doodle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" />
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="220.0dip">
+        <ImageView android:id="@id/chat_left_image_doodle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_drawing" android:adjustViewBounds="true" android:layout_centerInParent="true" />
+        <ProgressBar android:id="@id/chat_left_progressbar_doodle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textColor="@color/black" android:id="@id/txt_percent_download_left_doodle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

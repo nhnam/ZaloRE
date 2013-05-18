@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_contact_row" android:background="@drawable/bg_likecontact" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/likeContactAvatar" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/default_avatar" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/likeContactName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/constant_Contact" android:lines="1" android:singleLine="true" android:editable="false" />
+</LinearLayout>

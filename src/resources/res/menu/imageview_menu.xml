@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_userinfo" android:id="@id/btn_viewprofile" android:title="@string/str_menu_photo_userinfo" />
+    <item android:icon="@drawable/ic_nhantin3" android:id="@id/btn_sendmsg" android:title="@string/str_menu_photo_sendmes" />
+    <item android:icon="@drawable/ic_menu_download" android:id="@id/btn_savePhoto" android:title="@string/str_menu_photo_download" />
+    <item android:icon="@drawable/ic_menu_share" android:id="@id/btn_sharePhoto" android:title="@string/str_menu_photo_share" />
+    <item android:icon="@drawable/ic_menu_delete_image" android:id="@id/btn_deletePhoto" android:title="@string/str_menu_photo_delete" />
+    <item android:icon="@drawable/ic_abuse" android:id="@id/btn_photo_reportabuse" android:title="@string/str_reportabuse" />
+</menu>

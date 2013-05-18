@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="63" android:versionName="1.0.8" android:installLocation="auto" package="com.zing.zalo"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" android:resizeable="true" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="com.zing.zalo.permission.BIND_ZALO_SERVICE" />
+    <uses-permission android:name="zing.zalo.permission.ZALO_SERVICE" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <uses-feature android:name="android.hardware.bluetooth" android:required="false" />
+    <uses-feature android:name="android.hardware.screen.portrait" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.front" android:required="false" />
+    <permission android:label="@string/perm_acces" android:name="zing.zalo.permission.ZALO_SERVICE" android:protectionLevel="signature" android:description="@string/perm_acces_summary" />
+    <permission android:label="@string/perm_acces" android:name="com.zing.zalo.permission.BIND_ZALO_SERVICE" android:protectionLevel="normal" android:description="@string/perm_acces_summary" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application android:theme="@style/ThemeDefault" android:label="@string/app_name" android:icon="@drawable/icon" android:name="com.zing.zalo.app.MainApplication">
+        <activity android:label="@string/app_name" android:name="com.zing.zalo.ui.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.zing.zalo.theme.THEMES" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DialogTheme" android:label="@string/app_name" android:name="com.facebook.LoginActivity" />
+        <activity android:name=".ui.LoginZingActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.LoginDirectionActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InputPhoneActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InputPhoneFBActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InputPhoneZMActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeFBActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeZMActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.LoginFacebookActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.LoginZingMeActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeManualActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InputPhoneZAActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeZAActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VerifyCodeZAManualActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.UpdateZingMeInfor" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.AddFriendActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.SuggestFriendActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.AboutActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.HelpGameActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.PolicyActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.MainTabActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".ui.ChatActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize">
+            <intent-filter android:priority="10">
+                <action android:name="zm.voip.phone.action.DIALER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter android:priority="10">
+                <action android:name="zm.voip.phone.action.CALLLOG" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.GroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.CreateGroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.RenameGroupActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.ListMemberGroup" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".ui.IgnoreListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".filechooser.FileChooser" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.StrangerMessagesActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zing.zalo.ui.StrangerMessagesActivityUpdate" android:configChanges="keyboardHidden|orientation" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.SettingsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.PrivateSettingsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.CustomBackgroundSettingsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.BackgroundDetailsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.BackgroundManagerActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.PhotoTabActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InviteGroupListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.GalleryDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.HotPhotoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.NearByPhotoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".drawing.HandWriting" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".minigame.DrawSomething" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.MyInfoActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zing.zalo.ui.MyInfoActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UserNearbyListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ShakeFindFriendActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.UserDetailsActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zing.zalo.ui.UserDetailsActivity" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UpdateActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InvitePhoneListActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FindFriendAndAddActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ViewImage" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ViewLogActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ImageViewActivity" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.CropImageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.EffectsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:theme="@style/DialogTheme" android:name=".ui.MessagePopupActivity" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zing.zalo.ui.MessagePopupActivityIntent" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/DialogTheme" android:name=".ui.ZaloUserPopupActivity" android:taskAffinity="" android:excludeFromRecents="true" android:launchMode="singleTask" android:screenOrientation="user" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="com.zing.zalo.ui.ZaloUserPopupActivityIntent" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".social.ImageCommentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:label="@string/title_activity_plugin_manager" android:name=".ui.PluginManagerActivity" />
+        <activity android:name=".ui.SocialNetworkActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.PhoneBookActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.FeedDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.BlackListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.HiddenListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <receiver android:name=".receiver.AlarmStartServiceReceiver" />
+        <receiver android:name=".receiver.ZaloReceiver" android:permission="android.permission.RECEIVE_BOOT_COMPLETED" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.GTALK_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".service.ZaloBackgroundService" android:permission="zing.zalo.permission.ZALO_SERVICE" android:enabled="true" android:exported="true">
+            <intent-filter>
+                <action android:name="com.zing.zalo.intent.action.PICK_SERVICE" />
+                <category android:name="com.zing.zalo.intent.category.ZALO_SERVICE" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.ZaloPluginService" android:permission="com.zing.zalo.permission.BIND_ZALO_SERVICE" android:exported="true" />
+        <activity android:name=".ui.UserInfoDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VIPInfoDetailActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.ImageDescriptionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".social.NotificationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".social.UpdateStatusActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".ui.Setting" />
+        <activity android:name=".ui.ZaloListFragmentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.MessagesFragmentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FindFriendFragmentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.GroupListInfoActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.zing.zalo.social.TimelineFragmentActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.RoomMembersActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FacebookManageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ZingMeManageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".stickers.StickerCategoryActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".stickers.StickerDetailsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".stickers.StickerManageActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FacebookLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ZingMeLoginActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.BackgroundPreviewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.VIPAccountListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.WriteInvitationActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.FriendRequestListActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.InvitationDetailActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.BroadcastMsgToFriendsActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.BroadcastSMSInviteToFriendsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ShareViaActivity" android:launchMode="standard" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.TempShareViaActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/*" />
+                <data android:mimeType="image/*" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".social.VipAlbumPhotoActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.UpdateAvatarActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.UpdateNewUserInfor" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.CountryListActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".social.ImagePickerActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.ChooseMultiFriendsActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".ui.DrawViewActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+    </application>
+</manifest>

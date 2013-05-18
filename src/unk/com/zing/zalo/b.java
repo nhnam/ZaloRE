@@ -1,0 +1,107 @@
+package unk.com.zing.zalo;
+
+public final class b
+{
+  public static final int[] AbsSpinner = { 2130772047 };
+  public static final int AbsSpinner_entries = 0;
+  public static final int[] ActionBarHighlightButton = { 2130772046 };
+  public static final int ActionBarHighlightButton_button = 0;
+  public static final int[] BubbleEditText = { 2130771969, 2130771970 };
+  public static final int BubbleEditText_bubbleLayout = 1;
+  public static final int BubbleEditText_editTextLayout = 0;
+  public static final int[] BubbleViewContainer = { 2130771968 };
+  public static final int BubbleViewContainer_maxRows = 0;
+  public static final int[] CircleFlowIndicator = { 2130772031, 2130772032, 2130772033, 2130772034, 2130772035, 2130772036, 2130772037 };
+  public static final int CircleFlowIndicator_activeColor = 0;
+  public static final int CircleFlowIndicator_activeType = 6;
+  public static final int CircleFlowIndicator_centered = 3;
+  public static final int CircleFlowIndicator_fadeOut = 4;
+  public static final int CircleFlowIndicator_inactiveColor = 1;
+  public static final int CircleFlowIndicator_inactiveType = 5;
+  public static final int CircleFlowIndicator_radius = 2;
+  public static final int[] FanView = { 2130772038 };
+  public static final int FanView_menuSize = 0;
+  public static final int[] FlowLayout = { 2130771972, 2130771973, 2130771974, 2130771975 };
+  public static final int[] FlowLayout_LayoutParams = { 2130771976, 2130771977, 2130771978 };
+  public static final int FlowLayout_LayoutParams_layout_horizontalSpacing = 1;
+  public static final int FlowLayout_LayoutParams_layout_newLine = 0;
+  public static final int FlowLayout_LayoutParams_layout_verticalSpacing = 2;
+  public static final int FlowLayout_debugDraw = 3;
+  public static final int FlowLayout_horizontalSpacing = 0;
+  public static final int FlowLayout_orientation = 2;
+  public static final int FlowLayout_verticalSpacing = 1;
+  public static final int[] Gallery = { 2130772049, 2130772050, 2130772051, 2130772052 };
+  public static final int[] Gallery1 = { 16842828 };
+  public static final int Gallery1_android_galleryItemBackground = 0;
+  public static final int Gallery_animationDuration = 1;
+  public static final int Gallery_gravity = 0;
+  public static final int Gallery_spacing = 3;
+  public static final int Gallery_unselectedAlpha = 2;
+  public static final int[] ItemGallery = { 16842828 };
+  public static final int ItemGallery_android_galleryItemBackground = 0;
+  public static final int[] PullToRefresh = { 2130772020, 2130772021, 2130772022, 2130772023, 2130772024, 2130772025, 2130772026, 2130772027, 2130772028, 2130772029 };
+  public static final int PullToRefresh_ptrAdapterViewBackground = 0;
+  public static final int PullToRefresh_ptrDrawable = 6;
+  public static final int PullToRefresh_ptrHeaderBackground = 1;
+  public static final int PullToRefresh_ptrHeaderSubTextColor = 3;
+  public static final int PullToRefresh_ptrHeaderTextAppearance = 8;
+  public static final int PullToRefresh_ptrHeaderTextColor = 2;
+  public static final int PullToRefresh_ptrMode = 4;
+  public static final int PullToRefresh_ptrOverScroll = 7;
+  public static final int PullToRefresh_ptrShowIndicator = 5;
+  public static final int PullToRefresh_ptrSubHeaderTextAppearance = 9;
+  public static final int[] SatelliteMenu = { 2130772039, 2130772040, 2130772041, 2130772042, 2130772043, 2130772044, 2130772045 };
+  public static final int SatelliteMenu_bgtitleabout = 6;
+  public static final int SatelliteMenu_closeOnClick = 1;
+  public static final int SatelliteMenu_expandDuration = 0;
+  public static final int SatelliteMenu_mainImage = 5;
+  public static final int SatelliteMenu_marginFromBottom = 4;
+  public static final int SatelliteMenu_satelliteDistance = 3;
+  public static final int SatelliteMenu_totalSpacingDegree = 2;
+  public static final int[] SlidingMenu = { 2130771996, 2130771997, 2130771998, 2130771999, 2130772000, 2130772001, 2130772002, 2130772003, 2130772004, 2130772005, 2130772006, 2130772007, 2130772008 };
+  public static final int SlidingMenu_behindFadeDegree = 10;
+  public static final int SlidingMenu_behindFadeEnabled = 9;
+  public static final int SlidingMenu_behindOffset = 2;
+  public static final int SlidingMenu_behindScrollScale = 4;
+  public static final int SlidingMenu_behindWidth = 3;
+  public static final int SlidingMenu_selectorDrawable = 12;
+  public static final int SlidingMenu_selectorEnabled = 11;
+  public static final int SlidingMenu_shadowDrawable = 7;
+  public static final int SlidingMenu_shadowWidth = 8;
+  public static final int SlidingMenu_touchModeAbove = 5;
+  public static final int SlidingMenu_touchModeBehind = 6;
+  public static final int SlidingMenu_viewAbove = 0;
+  public static final int SlidingMenu_viewBehind = 1;
+  public static final int[] TwIndexView = { 2130772018, 2130772019 };
+  public static final int TwIndexView_twIndexViewHandlePosition = 0;
+  public static final int TwIndexView_twIndexViewIndexInterval = 1;
+  public static final int[] ViewFlow = { 2130772030 };
+  public static final int ViewFlow_sidebuffer = 0;
+  public static final int[] com_facebook_friend_picker_fragment = { 2130771986 };
+  public static final int com_facebook_friend_picker_fragment_multi_select = 0;
+  public static final int[] com_facebook_login_view = { 2130771991, 2130771992, 2130771993, 2130771994 };
+  public static final int com_facebook_login_view_confirm_logout = 0;
+  public static final int com_facebook_login_view_fetch_user_info = 1;
+  public static final int com_facebook_login_view_login_text = 2;
+  public static final int com_facebook_login_view_logout_text = 3;
+  public static final int[] com_facebook_picker_fragment = { 2130771979, 2130771980, 2130771981, 2130771982, 2130771983, 2130771984, 2130771985 };
+  public static final int com_facebook_picker_fragment_done_button_background = 6;
+  public static final int com_facebook_picker_fragment_done_button_text = 4;
+  public static final int com_facebook_picker_fragment_extra_fields = 1;
+  public static final int com_facebook_picker_fragment_show_pictures = 0;
+  public static final int com_facebook_picker_fragment_show_title_bar = 2;
+  public static final int com_facebook_picker_fragment_title_bar_background = 5;
+  public static final int com_facebook_picker_fragment_title_text = 3;
+  public static final int[] com_facebook_place_picker_fragment = { 2130771987, 2130771988, 2130771989, 2130771990 };
+  public static final int com_facebook_place_picker_fragment_radius_in_meters = 0;
+  public static final int com_facebook_place_picker_fragment_results_limit = 1;
+  public static final int com_facebook_place_picker_fragment_search_text = 2;
+  public static final int com_facebook_place_picker_fragment_show_search_box = 3;
+  public static final int[] com_facebook_profile_picture_view = { 2130771995 };
+  public static final int com_facebook_profile_picture_view_preset_size;
+}
+
+/* Location:           /home/danghvu/0day/Zalo/Zalo_1.0.8_dex2jar.jar
+ * Qualified Name:     com.zing.zalo.b
+ * JD-Core Version:    0.6.2
+ */

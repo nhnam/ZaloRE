@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="top" android:orientation="vertical" android:id="@id/menu_frame" android:background="@drawable/bg_leftmnu_nor" android:layout_width="@dimen/slidingmenu_with" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutTips" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_light" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tvTips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:maxLines="2" />
+            </LinearLayout>
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:gravity="center_vertical" android:background="@drawable/bg_leftmnu_head" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_menugroup_hot" style="@style/Feeditem_main_description" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutmyinfor" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:id="@id/image_profile" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/default_avatar" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/profile_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutnotification" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_notif" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/more_title_notification" android:layout_centerVertical="true" />
+                <TextView android:textAppearance="@style/notification_text" android:gravity="center" android:id="@id/numnotification" android:background="@drawable/bg_number_notif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="22.0dip" android:minHeight="22.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutvipaccount" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_vip" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/str_title_vipaccount" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutsticker" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_sticker" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/more_title_sticker" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_hot" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutzalosms" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_chuctet" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/more_title_zalosms" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moi" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:background="@drawable/bg_leftmnu_head" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_menugroup_settings" style="@style/Feeditem_main_description" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutprivatesetting" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_privacy" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/privatesetting_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutsetting" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_setting" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/setting_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutbackgroundsetting" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_more_privacy" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/backgroundsetting_title" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutignorelist" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_ignorelist" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/ignorelist" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:background="@drawable/bg_leftmnu_head" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_menugroup_product" style="@style/Feeditem_main_description" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutabout" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_about" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/str_appInfo" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <TextView android:textSize="12.0dip" android:textStyle="bold" android:background="@drawable/bg_leftmnu_head" android:paddingLeft="5.0dip" android:paddingTop="2.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/str_menugroup_acc" style="@style/Feeditem_main_description" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutchangeaccount" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_logout" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="Thay đổi tài khoản" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutExit" android:background="@drawable/bg_btn_sidemenu" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_exit" android:layout_centerVertical="true" />
+                <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="44.0dip" android:text="@string/str_exitApp" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <Button android:gravity="center" android:id="@id/btn_change_session_key" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change Session Key" android:layout_weight="1.0" />
+            <Button android:gravity="center" android:id="@id/btn_change_chatsign" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Change Chat Sign" android:layout_weight="1.0" />
+            <Button android:gravity="center" android:id="@id/btn_view_log" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="View log file" android:layout_weight="1.0" />
+            <Button android:gravity="center" android:id="@id/btn_clearAPIview_log" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Clear API View log file" android:layout_weight="1.0" />
+            <Button android:gravity="center" android:id="@id/btn_socket_connection" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Socket" android:layout_weight="1.0" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

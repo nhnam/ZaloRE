@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutStickerCategory" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/buddy_dp" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginRight="2.0dip" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/itemlist_text" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/constant_Contact" android:lines="1" android:singleLine="true" />
+        <TextView android:id="@id/quantity" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/constant_Contact" style="@style/Feeditem_main_description" />
+        <TextView android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/constant_Contact" style="@style/Feeditem_main_description" />
+    </LinearLayout>
+    <ImageView android:id="@id/imvStatus" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_moi" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" />
+        <Button android:id="@id/btnDeleteSticker" android:background="@drawable/bg_btn_funchar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:minWidth="60.0dip" android:minHeight="35.0dip" android:text="@string/delete" />
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animations>	
+	<item symbol="1"  drawableId="sticker_01" />	
+	<item symbol="2"  drawableId="sticker_02" />	
+	<item symbol="3"  drawableId="sticker_03" />	
+	<item symbol="4"  drawableId="sticker_04" />	
+	<item symbol="5"  drawableId="sticker_05" />	
+	<item symbol="6"  drawableId="sticker_06" />	
+	<item symbol="7"  drawableId="sticker_07" />	
+	<item symbol="8"  drawableId="sticker_08" />	
+	<item symbol="9"  drawableId="sticker_09" />	
+	<item symbol="10" drawableId="sticker_10" />	
+	<item symbol="11" drawableId="sticker_11" />	
+	<item symbol="12" drawableId="sticker_12" />	
+	<item symbol="13" drawableId="sticker_13" />	
+	<item symbol="14" drawableId="sticker_14" />	
+	<item symbol="15" drawableId="sticker_15" />	
+	<item symbol="16" drawableId="sticker_16" />	
+	<item symbol="17" drawableId="sticker_17" />	
+	<item symbol="18" drawableId="sticker_18" />	
+	<item symbol="19" drawableId="sticker_19" />	
+	<item symbol="20" drawableId="sticker_20" />	
+	<item symbol="21" drawableId="sticker_21" />
+	<item symbol="22" drawableId="sticker_22" />
+	<item symbol="23" drawableId="sticker_23" />	
+	<item symbol="24" drawableId="sticker_24" />	
+	<item symbol="25" drawableId="sticker_25" />	
+	<item symbol="26" drawableId="sticker_26" />	
+	<item symbol="27" drawableId="sticker_27" />	
+	<item symbol="28" drawableId="sticker_28" />	
+	<item symbol="29" drawableId="sticker_29" />
+	<item symbol="30" drawableId="sticker_30" />			
+</animations>

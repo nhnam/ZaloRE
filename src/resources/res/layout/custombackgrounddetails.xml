@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/custombackground_detail_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.zing.zalo.uicontrol.pulltorefresh.PullToRefreshGridView android:gravity="center" android:id="@id/gridBackgrounds" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:horizontalSpacing="1.0dip" android:verticalSpacing="1.0dip" android:stretchMode="columnWidth" android:columnWidth="100.0dip" android:numColumns="3" ptr:ptrMode="both" ptr:ptrDrawable="@drawable/default_ptr_drawable" xmlns:ptr="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

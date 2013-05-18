@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center_horizontal" android:id="@id/txtname" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_choose_image" android:singleLine="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?btnheader" />
+        <TextView android:textAppearance="@style/notification_text" android:gravity="center" android:id="@id/tvUploadItemCount" android:background="@drawable/bg_number_notif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:minWidth="20.0dip" android:minHeight="20.0dip" android:layout_toLeftOf="@id/btn_ok" android:layout_alignBottom="@id/txtname" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <GridView android:layout_gravity="center" android:id="@id/gridPhoto" android:background="@color/white" android:padding="2.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@*android:color/transparent" android:horizontalSpacing="2.0dip" android:verticalSpacing="2.0dip" android:stretchMode="columnWidth" android:numColumns="3" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/loading_view" android:background="#cc000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="30.0dip" android:layout_height="30.0dip" style="?android:progressBarStyleInverse" />
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/loading_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/str_tv_loading" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

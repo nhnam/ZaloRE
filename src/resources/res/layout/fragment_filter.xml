@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/camera_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zing.zalo">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/gl_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.zing.zalo.gl.FilterGLSurfaceView android:id="@id/fragment_filter_gl_view" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+    </LinearLayout>
+    <com.zing.zalo.zastagram.widget.FilterPicker android:id="@id/fragment_filter_filter_picker" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:background="@drawable/bg_footer" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height">
+        <ImageView android:layout_gravity="left|center" android:id="@id/btnCancel" android:background="@drawable/bg_btn_toolbar" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/icon_photozalo_huy" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:weightSum="3.0">
+            <com.zing.zalo.uicontrol.ActionBarHighlightButton android:id="@id/button_toggle_borders" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:button="@drawable/action_bar_frame" />
+            <com.zing.zalo.uicontrol.ActionBarHighlightButton android:id="@id/button_toggle_contrast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" app:button="@drawable/action_bar_contrast" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="right|center" android:id="@id/btnSave" android:background="@drawable/bg_btn_toolbar" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:src="@drawable/icon_photozalo_chon" />
+    </FrameLayout>
+</LinearLayout>

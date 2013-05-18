@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/funcLayoutitem" android:background="@drawable/bg_chatfunction_item" android:layout_width="@dimen/grid_image_width" android:layout_height="@dimen/grid_image_hight" android:minHeight="@dimen/grid_image_hight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="40.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/funcIconitem" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/str_desImg" />
+        <TextView android:textAppearance="@style/notification_text" android:gravity="center" android:id="@id/numnotification" android:background="@drawable/bg_number_notif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="22.0dip" android:minHeight="22.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0dip" android:textColor="#ff666a75" android:layout_gravity="center_horizontal" android:id="@id/funcNameitem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+</LinearLayout>

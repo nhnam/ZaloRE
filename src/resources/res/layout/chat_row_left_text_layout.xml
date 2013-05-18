@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:id="@id/chat_left_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/chat_left_message_lo" android:background="@drawable/chat_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/minwidth_bubble_chatcontent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/nameSenderGroup" android:layout_gravity="center_vertical" android:id="@id/chat_left_nameSender_text" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/maxwidth_namesender_chatcontent" android:maxLines="1" android:singleLine="true" />
+            <TextView android:textAppearance="@style/chatrow_text" android:textColorLink="@color/blue_hint" android:gravity="center_vertical" android:linksClickable="true" android:id="@id/chat_left_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_msgDefault" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom|left|center" android:id="@id/chat_left_txt_time_message" android:background="@drawable/chat_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" android:lines="1" />
+    </LinearLayout>
+    <View android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_weight="0.9" />
+</LinearLayout>

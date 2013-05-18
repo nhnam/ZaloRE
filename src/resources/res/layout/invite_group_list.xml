@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zing.zalo.ui.LayoutDetectsSoftKeyboard android:orientation="vertical" android:id="@id/main_view" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:k="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" android:layout_alignParentTop="true" style="?bgheader">
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:id="@id/zalo_titlebar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inviteGroup_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textAppearance="@style/notification_text" android:id="@id/numnotification" android:background="@drawable/bg_number_notif" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="18.0dip" android:minHeight="18.0dip" android:text="" android:layout_toRightOf="@id/zalo_titlebar" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_cancel" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <ImageButton android:id="@id/btn_done" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_done" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+    </RelativeLayout>
+    <LinearLayout android:id="@id/layout_bubble_container" android:background="@drawable/bg_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.zing.peoplepicker.views.BubbleViewContainer android:id="@id/bubble_container" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="4.0dip" k:maxRows="3">
+            <com.zing.peoplepicker.views.IconBubbleEditText android:id="@id/bubble" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textCapWords" k:editTextLayout="@layout/bubble_edit_text" k:bubbleLayout="@layout/contact_bubble_item" />
+        </com.zing.peoplepicker.views.BubbleViewContainer>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layout_bubble_container" android:layout_below="@id/bgheader_layout">
+        <com.zing.zalo.uicontrol.IndexableListView android:id="@id/phoneList" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" />
+        <include android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/empty_layout" />
+    </LinearLayout>
+</com.zing.zalo.ui.LayoutDetectsSoftKeyboard>

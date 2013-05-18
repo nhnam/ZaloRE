@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ico_onlyf" android:id="@id/filter_onlyf" android:title="@string/str_option_onlyf" />
+    <item android:icon="@drawable/ico_onlym" android:id="@id/filter_onlym" android:title="@string/str_option_onlym" />
+    <item android:icon="@drawable/ico_showall" android:id="@id/filter_showall" android:title="@string/str_option_showall" />
+    <item android:icon="@drawable/ico_hide_location" android:id="@id/filter_hide_location" android:title="@string/str_option_hide_location" />
+</menu>

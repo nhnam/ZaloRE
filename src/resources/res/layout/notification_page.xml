@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_comment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="3.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/description" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_title_notification" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zing.zalo.uicontrol.pulltorefresh.PullToRefreshListView android:id="@id/notificationListview" android:focusable="false" android:focusableInTouchMode="false" android:nextFocusUp="@id/chatnavbar" android:nextFocusDown="@id/chatinputbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="@color/noti_list_divider_color" android:dividerHeight="0.5dip" android:smoothScrollbar="true" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutNotificationEmpty" android:background="@color/bg_comment" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_listEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/txtemptydes_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/notification_empty" style="@style/Feeditem_main_content" />
+            <Button android:textColor="@color/txtinbubble_msgtab_color" android:id="@id/btn_retry" android:background="@drawable/btn_default" android:paddingLeft="25.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:minWidth="80.0dip" android:text="@string/str_bt_reload" style="@style/Feeditem_main_content" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

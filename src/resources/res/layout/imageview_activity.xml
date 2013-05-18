@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <vng.wmb.android.view.ZoomableImageView android:id="@id/imageView" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:id="@id/optionsBar" android:background="#66ffffff" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/backButton" android:background="@drawable/item_bkgr" android:layout_width="60.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:layout_marginLeft="20.0dip" android:text="Back" />
+    </LinearLayout>
+</FrameLayout>

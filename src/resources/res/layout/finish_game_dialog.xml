@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/bg_main_finishgame" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="top" android:id="@id/img_header_top" android:layout_width="fill_parent" android:layout_height="30.0dip" />
+    <ImageView android:id="@id/confirm_title_res" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:src="@drawable/text_hoanthanh" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/confirm_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/confirm_message" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_congrat_game" style="@style/DialogText" />
+        <TextView android:id="@id/congrat_keyword" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CHÌA KHÓA" style="@style/DialogText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="6.0dip">
+        <ImageView android:id="@id/img_avatarleft" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/default_avatar" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/vs_text" android:id="@id/txt_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0-0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_gachduoi" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_avatarright" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/default_avatar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_continue_game" style="@style/DialogText" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="20.0dip">
+        <Button android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_btn_no" android:background="@drawable/btt_do" android:layout_width="100.0dip" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:singleLine="true" />
+        <Button android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_btn_yes" android:background="@drawable/bg_select_game" android:layout_width="100.0dip" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

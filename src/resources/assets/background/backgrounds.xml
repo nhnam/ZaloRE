@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<animations>	
+	<item symbol="1"  drawableId="bg_01" />	
+	<item symbol="2"  drawableId="bg_02" />	
+	<item symbol="3"  drawableId="bg_03" />	
+	<item symbol="4"  drawableId="bg_04" />		
+	<item symbol="5"  drawableId="bg_05" />		
+	<item symbol="6"  drawableId="bg_06" />		
+	<item symbol="7"  drawableId="bg_07" />		
+	<item symbol="8"  drawableId="bg_08" />		
+	<item symbol="9"  drawableId="bg_09" />		
+	<item symbol="10"  drawableId="bg_10" />
+	<item symbol="11"  drawableId="bg_11" />
+	<item symbol="12"  drawableId="bg_12" />
+	<item symbol="13"  drawableId="bg_13" />
+	<item symbol="14"  drawableId="bg_14" />
+	<item symbol="15"  drawableId="bg_15" />
+	<item symbol="16"  drawableId="bg_16" />
+	<item symbol="17"  drawableId="bg_17" />
+	<item symbol="18"  drawableId="bg_18" />
+	<item symbol="19"  drawableId="bg_19" />
+	<item symbol="20"  drawableId="bg_20" />
+</animations>

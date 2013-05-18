@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainlayout_question_game" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:src="@drawable/logo_name" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/img_avatarleft" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/default_avatar" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textAppearance="@style/vs_text" android:id="@id/txt_vs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0-0" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_gachduoi" />
+        </LinearLayout>
+        <ImageView android:id="@id/img_avatarright" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/default_avatar" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textAppearance="@style/score_text" android:gravity="center" android:id="@id/txt_bomb" android:background="@drawable/khung_bom" android:paddingTop="14.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="10" />
+        <TextView android:textAppearance="@style/score_text" android:gravity="center" android:id="@id/txt_score" android:background="@drawable/khung_diem" android:paddingTop="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="568" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_content" android:background="@drawable/bg_chontu_top" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="290.0dip" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+        <ImageView android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/text_chontu" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="6.0dip" android:paddingTop="6.0dip" android:paddingRight="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutquestionone" android:background="@drawable/bg_select_game" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/select_word" android:id="@id/word_easy" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CAR" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutquestiontwo" android:background="@drawable/bg_select_game" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/select_word" android:id="@id/word_normal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="HAT" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutquestionthree" android:background="@drawable/bg_select_game" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginBottom="4.0dip">
+                <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/select_word" android:id="@id/word_difficult" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="KEY" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="64.0dip" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                <com.zing.zalo.uicontrol.GifDecoderView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_game_sao" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/bg_chontu_bottom" android:layout_width="290.0dip" android:layout_height="10.0dip" android:layout_marginBottom="10.0dip" />
+    <Button android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@id/btnrefresh" android:background="@drawable/button_game_cam" android:layout_width="120.0dip" android:layout_height="50.0dip" android:text="Đổi từ" />
+</LinearLayout>

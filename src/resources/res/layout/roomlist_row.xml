@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="fill_horizontal|center" android:orientation="horizontal" android:id="@id/contact_row" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/item_list_default_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/gray_talk" android:id="@id/btn_remove_member_group" android:background="@drawable/bgboxinputactivecde" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="70.0dip" android:layout_height="wrap_content" android:text="@string/delete" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_contact_row" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_toLeftOf="@id/btn_remove_member_group" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/buddy_dp" android:duplicateParentState="true" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/avatar_grpinvite" android:adjustViewBounds="true" android:maxWidth="46.0dip" android:maxHeight="46.0dip" android:contentDescription="@string/str_desImg" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+            <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/itemlist_text" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/constant_Contact" android:lines="1" android:singleLine="true" />
+            <TextView android:textSize="13.0dip" android:textColor="@color/txtdate_color" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/constant_Contact" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

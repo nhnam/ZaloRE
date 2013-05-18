@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/layout_picture_toolbar" android:background="@color/black_alpha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_prev" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_prev_im" android:layout_weight="0.2" />
+    <TextView android:textSize="10.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/status_position" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/1" android:layout_weight="0.2" />
+    <ImageView android:id="@id/btn_next" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_next_im" android:layout_weight="0.2" />
+    <ImageView android:id="@id/btn_down" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_down_im" android:layout_weight="0.2" />
+    <ImageView android:id="@id/btn_share" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_share_im" android:layout_weight="0.2" />
+    <ImageView android:id="@id/slideshow" android:background="@drawable/bgbtnpicturetoolbar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_play" android:layout_weight="0.2" />
+    <LinearLayout android:gravity="center" android:id="@id/btn_like" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_like" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_totallike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/btn_comment" android:background="@drawable/bgbtnpicturetoolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.2">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_menu_cmt" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@id/tv_totalcmt" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0" />
+    </LinearLayout>
+</LinearLayout>

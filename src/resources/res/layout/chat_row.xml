@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/chat_row_time_row" />
+    <LinearLayout android:id="@id/update_info_row" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/time_row" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_updateGroupActivity" android:background="@drawable/chat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_row" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/time_row">
+        <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/chat_right_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zing.zalo.component.ChatRightText android:layout_gravity="right|center" android:id="@id/chat_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightAnimation android:layout_gravity="right|center" android:id="@id/chat_right_animation_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightDoodle android:layout_gravity="right|center" android:id="@id/chat_right_doodle_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightImage android:layout_gravity="right|center" android:id="@id/chat_right_image_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightVoice android:layout_gravity="right|center" android:id="@id/chat_right_voice_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightMiniGame android:layout_gravity="right|center" android:id="@id/chat_right_minigame_row" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatRightVipRecommend android:id="@id/chat_right_vip_recommend_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_left_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top|left|center" android:id="@id/chat_left_dp" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/default_avatar" />
+            <com.zing.zalo.component.ChatLeftText android:id="@id/chat_left_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVipText android:id="@id/chat_left_vip_text_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftAnimation android:id="@id/chat_left_animation_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftDoodle android:id="@id/chat_left_doodle_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftImage android:id="@id/chat_left_image_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVipAlbum android:id="@id/chat_left_vip_album_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVoice android:id="@id/chat_left_voice_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftMiniGame android:id="@id/chat_left_minigame_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVipAudio android:id="@id/chat_left_vip_audio_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVipVideo android:id="@id/chat_left_vip_video_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftVipRecommend android:id="@id/chat_left_vip_recommend_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.zing.zalo.component.ChatLeftLink android:id="@id/chat_left_link_row" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

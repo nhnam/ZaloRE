@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right|center" android:id="@id/chat_right_image_layout" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom" android:id="@id/chat_right_txt_time_image" android:background="@drawable/chat_time_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" />
+    <LinearLayout android:gravity="right|center" android:orientation="vertical" android:id="@id/chat_right_image_lo" android:background="@drawable/chat_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/chat_right_image" android:layout_width="@dimen/image_chat_height" android:layout_height="@dimen/image_chat_height" android:src="@drawable/attach_gallery_96" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/str_desImg" />
+            <ProgressBar android:id="@id/chat_right_progressbar_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <TextView android:textColor="@color/white" android:id="@id/txt_percent_upload_right_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/chat_right_image_state_lo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <ImageView android:layout_gravity="left|center" android:id="@id/chat_right_icon_status_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" android:contentDescription="@string/str_desImg" />
+            <TextView android:textSize="10.0sp" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:id="@id/chat_right_image_state_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/sending_message_state" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

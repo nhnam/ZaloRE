@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<icc>
+    <item country="Afghanistan" isocountrycodes="AF/AFG" countrycode="93" />
+    <item country="Albania" isocountrycodes="AL/ALB" countrycode="355" />
+    <item country="Algeria" isocountrycodes="DZ/DZA" countrycode="213" />
+    <item country="American Samoa" isocountrycodes="AS/ASM" countrycode="1684" />
+    <item country="Andorra" isocountrycodes="AD/AND" countrycode="376" />
+    <item country="Angola" isocountrycodes="AO/AGO" countrycode="244" />
+    <item country="Anguilla" isocountrycodes="AI/AIA" countrycode="1264" />
+    <item country="Antarctica" isocountrycodes="AQ/ATA" countrycode="672" />
+    <item country="Antigua and Barbuda" isocountrycodes="AG/ATG" countrycode="1268" />
+    <item country="Argentina" isocountrycodes="AR/ARG" countrycode="54" />
+    <item country="Armenia" isocountrycodes="AM/ARM" countrycode="374" />
+    <item country="Aruba" isocountrycodes="AW/ABW" countrycode="297" />
+    <item country="Australia" isocountrycodes="AU/AUS" countrycode="61" />
+    <item country="Austria" isocountrycodes="AT/AUT" countrycode="43" />
+    <item country="Azerbaijan" isocountrycodes="AZ/AZE" countrycode="994" />
+    <item country="Bahamas" isocountrycodes="BS/BHS" countrycode="1242" />
+    <item country="Bahrain" isocountrycodes="BH/BHR" countrycode="973" />
+    <item country="Bangladesh" isocountrycodes="BD/BGD" countrycode="880" />
+    <item country="Barbados" isocountrycodes="BB/BRB" countrycode="1246" />
+    <item country="Belarus" isocountrycodes="BY/BLR" countrycode="375" />
+    <item country="Belgium" isocountrycodes="BE/BEL" countrycode="32" />
+    <item country="Belize" isocountrycodes="BZ/BLZ" countrycode="501" />
+    <item country="Benin" isocountrycodes="BJ/BEN" countrycode="229" />
+    <item country="Bermuda" isocountrycodes="BM/BMU" countrycode="1441" />
+    <item country="Bhutan" isocountrycodes="BT/BTN" countrycode="975" />
+    <item country="Bolivia" isocountrycodes="BO/BOL" countrycode="591" />
+    <item country="Bosnia and Herzegovina" isocountrycodes="BA/BIH" countrycode="387" />
+    <item country="Botswana" isocountrycodes="BW/BWA" countrycode="267" />
+    <item country="Brazil" isocountrycodes="BR/BRA" countrycode="55" />
+    <item country="British Virgin Islands" isocountrycodes="VG/VGB" countrycode="1284" />
+    <item country="Brunei" isocountrycodes="BN/BRN" countrycode="673" />
+    <item country="Bulgaria" isocountrycodes="BG/BGR" countrycode="359" />
+    <item country="Burkina Faso" isocountrycodes="BF/BFA" countrycode="226" />
+    <item country="Burma (Myanmar)" isocountrycodes="MM/MMR" countrycode="95" />
+    <item country="Burundi" isocountrycodes="BI/BDI" countrycode="257" />
+    <item country="Cambodia" isocountrycodes="KH/KHM" countrycode="855" />
+    <item country="Cameroon" isocountrycodes="CM/CMR" countrycode="237" />
+    <item country="Canada" isocountrycodes="CA/CAN" countrycode="1" />
+    <item country="Cape Verde" isocountrycodes="CV/CPV" countrycode="238" />
+    <item country="Cayman Islands" isocountrycodes="KY/CYM" countrycode="1345" />
+    <item country="Central African Republic" isocountrycodes="CF/CAF" countrycode="236" />
+    <item country="Chad" isocountrycodes="TD/TCD" countrycode="235" />
+    <item country="Chile" isocountrycodes="CL/CHL" countrycode="56" />
+    <item country="China" isocountrycodes="CN/CHN" countrycode="86" />
+    <item country="Christmas Island" isocountrycodes="CX/CXR" countrycode="61" />
+    <item country="Cocos (Keeling) Islands" isocountrycodes="CC/CCK" countrycode="61" />
+    <item country="Colombia" isocountrycodes="CO/COL" countrycode="57" />
+    <item country="Comoros" isocountrycodes="KM/COM" countrycode="269" />
+    <item country="Cook Islands" isocountrycodes="CK/COK" countrycode="682" />
+    <item country="Costa Rica" isocountrycodes="CR/CRC" countrycode="506" />
+    <item country="Croatia" isocountrycodes="HR/HRV" countrycode="385" />
+    <item country="Cuba" isocountrycodes="CU/CUB" countrycode="53" />
+    <item country="Cyprus" isocountrycodes="CY/CYP" countrycode="357" />
+    <item country="Czech Republic" isocountrycodes="CZ/CZE" countrycode="420" />
+    <item country="Democratic Republic of the Congo" isocountrycodes="CD/COD" countrycode="243" />
+    <item country="Denmark" isocountrycodes="DK/DNK" countrycode="45" />
+    <item country="Djibouti" isocountrycodes="DJ/DJI" countrycode="253" />
+    <item country="Dominica" isocountrycodes="DM/DMA" countrycode="1767" />
+    <item country="Dominican Republic" isocountrycodes="DO/DOM" countrycode="1809" />
+    <item country="Ecuador" isocountrycodes="EC/ECU" countrycode="593" />
+    <item country="Egypt" isocountrycodes="EG/EGY" countrycode="20" />
+    <item country="El Salvador" isocountrycodes="SV/SLV" countrycode="503" />
+    <item country="Equatorial Guinea" isocountrycodes="GQ/GNQ" countrycode="240" />
+    <item country="Eritrea" isocountrycodes="ER/ERI" countrycode="291" />
+    <item country="Estonia" isocountrycodes="EE/EST" countrycode="372" />
+    <item country="Ethiopia" isocountrycodes="ET/ETH" countrycode="251" />
+    <item country="Falkland Islands" isocountrycodes="FK/FLK" countrycode="500" />
+    <item country="Faroe Islands" isocountrycodes="FO/FRO" countrycode="298" />
+    <item country="Fiji" isocountrycodes="FJ/FJI" countrycode="679" />
+    <item country="Finland" isocountrycodes="FI/FIN" countrycode="358" />
+    <item country="France" isocountrycodes="FR/FRA" countrycode="33" />
+    <item country="French Polynesia" isocountrycodes="PF/PYF" countrycode="689" />
+    <item country="Gabon" isocountrycodes="GA/GAB" countrycode="241" />
+    <item country="Gambia" isocountrycodes="GM/GMB" countrycode="220" />
+    <item country="Georgia" isocountrycodes="GE/GEO" countrycode="995" />
+    <item country="Germany" isocountrycodes="DE/DEU" countrycode="49" />
+    <item country="Ghana" isocountrycodes="GH/GHA" countrycode="233" />
+    <item country="Gibraltar" isocountrycodes="GI/GIB" countrycode="350" />
+    <item country="Greece" isocountrycodes="GR/GRC" countrycode="30" />
+    <item country="Greenland" isocountrycodes="GL/GRL" countrycode="299" />
+    <item country="Grenada" isocountrycodes="GD/GRD" countrycode="1473" />
+    <item country="Guam" isocountrycodes="GU/GUM" countrycode="1671" />
+    <item country="Guatemala" isocountrycodes="GT/GTM" countrycode="502" />
+    <item country="Guinea" isocountrycodes="GN/GIN" countrycode="224" />
+    <item country="Guinea-Bissau" isocountrycodes="GW/GNB" countrycode="245" />
+    <item country="Guyana" isocountrycodes="GY/GUY" countrycode="592" />
+    <item country="Haiti" isocountrycodes="HT/HTI" countrycode="509" />
+    <item country="Holy See (Vatican City)" isocountrycodes="VA/VAT" countrycode="39" />
+    <item country="Honduras" isocountrycodes="HN/HND" countrycode="504" />
+    <item country="Hong Kong" isocountrycodes="HK/HKG" countrycode="852" />
+    <item country="Hungary" isocountrycodes="HU/HUN" countrycode="36" />
+    <item country="Iceland" isocountrycodes="IS/IS" countrycode="354" />
+    <item country="India" isocountrycodes="IN/IND" countrycode="91" />
+    <item country="Indonesia" isocountrycodes="ID/IDN" countrycode="62" />
+    <item country="Iran" isocountrycodes="IR/IRN" countrycode="98" />
+    <item country="Iraq" isocountrycodes="IQ/IRQ" countrycode="964" />
+    <item country="Ireland" isocountrycodes="IE/IRL" countrycode="353" />
+    <item country="Isle of Man" isocountrycodes="IM/IMN" countrycode="44" />
+    <item country="Israel" isocountrycodes="IL/ISR" countrycode="972" />
+    <item country="Italy" isocountrycodes="IT/ITA" countrycode="39" />
+    <item country="Ivory Coast" isocountrycodes="CI/CIV" countrycode="225" />
+    <item country="Jamaica" isocountrycodes="JM/JAM" countrycode="1876" />
+    <item country="Japan" isocountrycodes="JP/JPN" countrycode="81" />
+    <item country="Jordan" isocountrycodes="JO/JOR" countrycode="962" />
+    <item country="Kazakhstan" isocountrycodes="KZ/KAZ" countrycode="7" />
+    <item country="Kenya" isocountrycodes="KE/KEN" countrycode="254" />
+    <item country="Kiribati" isocountrycodes="KI/KIR" countrycode="686" />
+    <item country="Kuwait" isocountrycodes="KW/KWT" countrycode="965" />
+    <item country="Kyrgyzstan" isocountrycodes="KG/KGZ" countrycode="996" />
+    <item country="Laos" isocountrycodes="LA/LAO" countrycode="856" />
+    <item country="Latvia" isocountrycodes="LV/LVA" countrycode="371" />
+    <item country="Lebanon" isocountrycodes="LB/LBN" countrycode="961" />
+    <item country="Lesotho" isocountrycodes="LS/LSO" countrycode="266" />
+    <item country="Liberia" isocountrycodes="LR/LBR" countrycode="231" />
+    <item country="Libya" isocountrycodes="LY/LBY" countrycode="218" />
+    <item country="Liechtenstein" isocountrycodes="LI/LIE" countrycode="423" />
+    <item country="Lithuania" isocountrycodes="LT/LTU" countrycode="370" />
+    <item country="Luxembourg" isocountrycodes="LU/LUX" countrycode="352" />
+    <item country="Macau" isocountrycodes="MO/MAC" countrycode="853" />
+    <item country="Macedonia" isocountrycodes="MK/MKD" countrycode="389" />
+    <item country="Madagascar" isocountrycodes="MG/MDG" countrycode="261" />
+    <item country="Malawi" isocountrycodes="MW/MWI" countrycode="265" />
+    <item country="Malaysia" isocountrycodes="MY/MYS" countrycode="60" />
+    <item country="Maldives" isocountrycodes="MV/MDV" countrycode="960" />
+    <item country="Mali" isocountrycodes="ML/MLI" countrycode="223" />
+    <item country="Malta" isocountrycodes="MT/MLT" countrycode="356" />
+    <item country="Marshall Islands" isocountrycodes="MH/MHL" countrycode="692" />
+    <item country="Mauritania" isocountrycodes="MR/MRT" countrycode="222" />
+    <item country="Mauritius" isocountrycodes="MU/MUS" countrycode="230" />
+    <item country="Mayotte" isocountrycodes="YT/MYT" countrycode="262" />
+    <item country="Mexico" isocountrycodes="MX/MEX" countrycode="52" />
+    <item country="Micronesia" isocountrycodes="FM/FSM" countrycode="691" />
+    <item country="Moldova" isocountrycodes="MD/MDA" countrycode="373" />
+    <item country="Monaco" isocountrycodes="MC/MCO" countrycode="377" />
+    <item country="Mongolia" isocountrycodes="MN/MNG" countrycode="976" />
+    <item country="Montenegro" isocountrycodes="ME/MNE" countrycode="382" />
+    <item country="Montserrat" isocountrycodes="MS/MSR" countrycode="1664" />
+    <item country="Morocco" isocountrycodes="MA/MAR" countrycode="212" />
+    <item country="Mozambique" isocountrycodes="MZ/MOZ" countrycode="258" />
+    <item country="Namibia" isocountrycodes="NA/NAM" countrycode="264" />
+    <item country="Nauru" isocountrycodes="NR/NRU" countrycode="674" />
+    <item country="Nepal" isocountrycodes="NP/NPL" countrycode="977" />
+    <item country="Netherlands" isocountrycodes="NL/NLD" countrycode="31" />
+    <item country="Netherlands Antilles" isocountrycodes="AN/ANT" countrycode="599" />
+    <item country="New Caledonia" isocountrycodes="NC/NCL" countrycode="687" />
+    <item country="New Zealand" isocountrycodes="NZ/NZL" countrycode="64" />
+    <item country="Nicaragua" isocountrycodes="NI/NIC" countrycode="505" />
+    <item country="Niger" isocountrycodes="NE/NER" countrycode="227" />
+    <item country="Nigeria" isocountrycodes="NG/NGA" countrycode="234" />
+    <item country="Niue" isocountrycodes="NU/NIU" countrycode="683" />
+    <item country="Norfolk Island" isocountrycodes="/ NFK" countrycode="672" />
+    <item country="North Korea" isocountrycodes="KP/PRK" countrycode="850" />
+    <item country="Northern Mariana Islands" isocountrycodes="MP/MNP" countrycode="1670" />
+    <item country="Norway" isocountrycodes="NO/NOR" countrycode="47" />
+    <item country="Oman" isocountrycodes="OM/OMN" countrycode="968" />
+    <item country="Pakistan" isocountrycodes="PK/PAK" countrycode="92" />
+    <item country="Palau" isocountrycodes="PW/PLW" countrycode="680" />
+    <item country="Panama" isocountrycodes="PA/PAN" countrycode="507" />
+    <item country="Papua New Guinea" isocountrycodes="PG/PNG" countrycode="675" />
+    <item country="Paraguay" isocountrycodes="PY/PRY" countrycode="595" />
+    <item country="Peru" isocountrycodes="PE/PER" countrycode="51" />
+    <item country="Philippines" isocountrycodes="PH/PHL" countrycode="63" />
+    <item country="Pitcairn Islands" isocountrycodes="PN/PCN" countrycode="870" />
+    <item country="Poland" isocountrycodes="PL/POL" countrycode="48" />
+    <item country="Portugal" isocountrycodes="PT/PRT" countrycode="351" />
+    <item country="Puerto Rico" isocountrycodes="PR/PRI" countrycode="1" />
+    <item country="Qatar" isocountrycodes="QA/QAT" countrycode="974" />
+    <item country="Republic of the Congo" isocountrycodes="CG/COG" countrycode="242" />
+    <item country="Romania" isocountrycodes="RO/ROU" countrycode="40" />
+    <item country="Russia" isocountrycodes="RU/RUS" countrycode="7" />
+    <item country="Rwanda" isocountrycodes="RW/RWA" countrycode="250" />
+    <item country="Saint Barthelemy" isocountrycodes="BL/BLM" countrycode="590" />
+    <item country="Saint Helena" isocountrycodes="SH/SHN" countrycode="290" />
+    <item country="Saint Kitts and Nevis" isocountrycodes="KN/KNA" countrycode="1869" />
+    <item country="Saint Lucia" isocountrycodes="LC/LCA" countrycode="1758" />
+    <item country="Saint Martin" isocountrycodes="MF/MAF" countrycode="1599" />
+    <item country="Saint Pierre and Miquelon" isocountrycodes="PM/SPM" countrycode="508" />
+    <item country="Saint Vincent and the Grenadines" isocountrycodes="VC/VCT" countrycode="1784" />
+    <item country="Samoa" isocountrycodes="WS/WSM" countrycode="685" />
+    <item country="San Marino" isocountrycodes="SM/SMR" countrycode="378" />
+    <item country="Sao Tome and Principe" isocountrycodes="ST/STP" countrycode="239" />
+    <item country="Saudi Arabia" isocountrycodes="SA/SAU" countrycode="966" />
+    <item country="Senegal" isocountrycodes="SN/SEN" countrycode="221" />
+    <item country="Serbia" isocountrycodes="RS/SRB" countrycode="381" />
+    <item country="Seychelles" isocountrycodes="SC/SYC" countrycode="248" />
+    <item country="Sierra Leone" isocountrycodes="SL/SLE" countrycode="232" />
+    <item country="Singapore" isocountrycodes="SG/SGP" countrycode="65" />
+    <item country="Slovakia" isocountrycodes="SK/SVK" countrycode="421" />
+    <item country="Slovenia" isocountrycodes="SI/SVN" countrycode="386" />
+    <item country="Solomon Islands" isocountrycodes="SB/SLB" countrycode="677" />
+    <item country="Somalia" isocountrycodes="SO/SOM" countrycode="252" />
+    <item country="South Africa" isocountrycodes="ZA/ZAF" countrycode="27" />
+    <item country="South Korea" isocountrycodes="KR/KOR" countrycode="82" />
+    <item country="Spain" isocountrycodes="ES/ESP" countrycode="34" />
+    <item country="Sri Lanka" isocountrycodes="LK/LKA" countrycode="94" />
+    <item country="Sudan" isocountrycodes="SD/SDN" countrycode="249" />
+    <item country="Suriname" isocountrycodes="SR/SUR" countrycode="597" />
+    <item country="Svalbard" isocountrycodes="SJ/SJM" countrycode=" " />
+    <item country="Swaziland" isocountrycodes="SZ/SWZ" countrycode="268" />
+    <item country="Sweden" isocountrycodes="SE/SWE" countrycode="46" />
+    <item country="Switzerland" isocountrycodes="CH/CHE" countrycode="41" />
+    <item country="Syria" isocountrycodes="SY/SYR" countrycode="963" />
+    <item country="Taiwan" isocountrycodes="TW/TWN" countrycode="886" />
+    <item country="Tajikistan" isocountrycodes="TJ/TJK" countrycode="992" />
+    <item country="Tanzania" isocountrycodes="TZ/TZA" countrycode="255" />
+    <item country="Thailand" isocountrycodes="TH/THA" countrycode="66" />
+    <item country="Timor-Leste" isocountrycodes="TL/TLS" countrycode="670" />
+    <item country="Togo" isocountrycodes="TG/TGO" countrycode="228" />
+    <item country="Tokelau" isocountrycodes="TK/TKL" countrycode="690" />
+    <item country="Tonga" isocountrycodes="TO/TON" countrycode="676" />
+    <item country="Trinidad and Tobago" isocountrycodes="TT/TTO" countrycode="1868" />
+    <item country="Tunisia" isocountrycodes="TN/TUN" countrycode="216" />
+    <item country="Turkey" isocountrycodes="TR/TUR" countrycode="90" />
+    <item country="Turkmenistan" isocountrycodes="TM/TKM" countrycode="993" />
+    <item country="Turks and Caicos Islands" isocountrycodes="TC/TCA" countrycode="1649" />
+    <item country="Tuvalu" isocountrycodes="TV/TUV" countrycode="688" />
+    <item country="Uganda" isocountrycodes="UG/UGA" countrycode="256" />
+    <item country="Ukraine" isocountrycodes="UA/UKR" countrycode="380" />
+    <item country="United Arab Emirates" isocountrycodes="AE/ARE" countrycode="971" />
+    <item country="United Kingdom" isocountrycodes="GB/GBR" countrycode="44" />
+    <item country="United States" isocountrycodes="US/USA" countrycode="1" />
+    <item country="Uruguay" isocountrycodes="UY/URY" countrycode="598" />
+    <item country="US Virgin Islands" isocountrycodes="VI/VIR" countrycode="1340" />
+    <item country="Uzbekistan" isocountrycodes="UZ/UZB" countrycode="998" />
+    <item country="Vanuatu" isocountrycodes="VU/VUT" countrycode="678" />
+    <item country="Venezuela" isocountrycodes="VE/VEN" countrycode="58" />
+    <item country="Vietnam" isocountrycodes="VN/VNM" countrycode="84" />
+    <item country="Wallis and Futuna" isocountrycodes="WF/WLF" countrycode="681" />
+    <item country="Yemen" isocountrycodes="YE/YEM" countrycode="967" />
+    <item country="Zambia" isocountrycodes="ZM/ZMB" countrycode="260" />
+    <item country="Zimbabwe" isocountrycodes="ZW/ZWE" countrycode="263" />
+</icc>

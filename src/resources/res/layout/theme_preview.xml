@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:id="@id/ThemeTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/ThemeDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/ThemeIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_launcher_shortcut" />
+    <Button android:id="@id/ThemeApply" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_themes_apply_theme" android:onClick="applyTheme" />
+    <Button android:id="@id/ThemeSearch" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pref_themes_get_themes" android:onClick="getThemes" />
+</LinearLayout>

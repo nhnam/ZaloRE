@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/bottom_bar" android:background="@drawable/bg_footer" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/discard" android:background="@drawable/bg_btn_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_huy" android:layout_weight="0.18" />
+    <ImageView android:id="@id/rotateLeft" android:background="@drawable/bg_btn_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_xoaytrai" android:layout_weight="0.18" />
+    <ImageView android:id="@id/rotateRight" android:background="@drawable/bg_btn_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_xoayphai" android:layout_weight="0.18" />
+    <ImageView android:id="@id/fullimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_catfull" android:layout_weight="0.18" />
+    <ImageView android:id="@id/cropimage" android:background="@drawable/button_pooter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_cat" android:layout_weight="0.18" />
+    <ImageView android:id="@id/save" android:background="@drawable/bg_btn_toolbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_photozalo_chon" android:layout_weight="0.18" />
+</LinearLayout>

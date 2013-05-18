@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.zing.zalo.uicontrol.IndexableListView android:id="@id/phoneList" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" style="?backgroundmain">
+        <ImageView android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wm_loading" android:contentDescription="@string/str_desImg" />
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+        <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/gray_333333" android:gravity="center_horizontal" android:layout_gravity="top|center" android:id="@id/loading_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_tv_readingContact" />
+    </LinearLayout>
+</FrameLayout>

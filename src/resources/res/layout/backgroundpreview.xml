@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:focusable="true" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/description" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/background_confirm" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_profile_menu" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_update" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?btnheader" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_bubble_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/tv_desApplyAll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/background_applyall" />
+        <CheckBox android:textSize="16.0sp" android:textColor="@color/black" android:layout_gravity="center" android:id="@id/cbApplyAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:button="@drawable/btn_check" android:text="@string/background_applyall" />
+    </LinearLayout>
+    <ScrollView android:padding="10.0dip" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivBgPreivew" android:layout_width="200.0dip" android:layout_height="300.0dip" android:src="@drawable/bg_chatpreview" android:scaleType="fitXY" android:adjustViewBounds="true" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

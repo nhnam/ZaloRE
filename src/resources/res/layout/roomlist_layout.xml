@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="3.0dip" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/description" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:ellipsize="end" android:gravity="center" android:id="@id/tvTitle" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/btn_create_menu" android:layout_toRightOf="@id/btn_back" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_create_menu" android:padding="4.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_userinfo" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?btnheader" />
+    </RelativeLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zing.zalo.uicontrol.pulltorefresh.PullToRefreshListView android:id="@id/roomsList" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layoutRoomsListEmpty" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+            <ImageView android:layout_gravity="center" android:id="@id/img_listEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/txtemptydes_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_rooms_empty" />
+            <Button android:textColor="@color/gray_talk" android:id="@id/btnRetry" android:background="@drawable/btn_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:minWidth="80.0dip" android:text="@string/str_bt_reload" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

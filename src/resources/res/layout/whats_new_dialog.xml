@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dialog_header_default" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ic_moi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_titleDlg_WhatsNew" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/confirm_content" android:background="@drawable/dialog_center" android:layout_width="fill_parent" android:layout_height="280.0dip">
+        <RelativeLayout android:gravity="center" android:id="@id/layoutloading" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+        </RelativeLayout>
+        <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <WebView android:id="@id/webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialog_footer" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/confirm_btn_yes" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+        <Button android:id="@id/confirm_btn_no" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

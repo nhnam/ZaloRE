@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/layoutFeedFooter" android:background="@color/bg_feed" android:layout_width="fill_parent" android:layout_height="42.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ProgressBar android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <TextView android:textSize="14.0dip" android:textColor="@color/gray_talk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/loading" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@id/layoutFeedFooterError" android:background="@color/bg_feed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="42.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" />
+        <TextView android:textSize="13.0dip" android:textStyle="bold" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/loadmore_failed" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/bgheader_layout" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <Button android:textColor="#ffffffff" android:id="@id/btnHandWriting" android:background="@drawable/tab_bg_top_left_selected_01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Viết tay" />
+        <Button android:textColor="#ffffffff" android:id="@id/btnDoodle" android:background="@drawable/tab_bg_top_right_unselected_01" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="Vẽ tự do" />
+    </LinearLayout>
+    <View android:background="#ff696969" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <View android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/myfingerpaint" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.1" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/bottommenu" android:background="@drawable/tab_bg_selector" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_margin="0.0dip">
+            <ImageView android:id="@id/bg_ChooseColor" android:background="@color/toolbar_blue" android:layout_width="16.0dip" android:layout_height="17.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnChooseColor" android:background="@drawable/bgbtnchoosecolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/layout_brush_size" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBrushSize" android:background="@drawable/bgbtnbrushsize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBGColor" android:background="@drawable/bgbtnbgcolor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBGImage" android:background="@drawable/bgbtnbgimage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/tab_bg_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/separator_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="0.1">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_done" android:background="@drawable/bgbtn_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/tab_bg_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="1.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/separator_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBrush" android:background="@drawable/bgbtnbrush" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBrushBlur" android:background="@drawable/bgbtnbrushblur" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnBrush3d" android:background="@drawable/bgbtnbrush3d" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/tab_bg_selector" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:background="@drawable/separator_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnEraser" android:background="@drawable/bgbtneraser" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnEraserAll" android:background="@drawable/bgbtneraserall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin" android:layout_marginRight="@dimen/menu_finger_paint_margin" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnSpace" android:background="@drawable/bgbtnspace" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin_handwriting" android:layout_marginRight="@dimen/menu_finger_paint_margin_handwriting" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnDeleteCharacter" android:background="@drawable/bgbtndeletecharacter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin_handwriting" android:layout_marginRight="@dimen/menu_finger_paint_margin_handwriting" />
+        <ImageButton android:layout_gravity="center_vertical" android:id="@id/btnEnter" android:background="@drawable/bgbtnenter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/menu_finger_paint_margin_handwriting" android:layout_marginRight="@dimen/menu_finger_paint_margin_handwriting" />
+    </LinearLayout>
+</LinearLayout>

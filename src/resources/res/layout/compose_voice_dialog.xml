@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dialog_header_default" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/ico_pophead_default" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_titleDefault" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_content" android:background="@drawable/dialog_center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_record" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zing.zalo.uicontrol.AnimImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_animspeaker_n" />
+            <TextView android:textSize="24.0dip" android:gravity="center_horizontal" android:id="@id/txttime1" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_begin_time" style="@style/DialogText" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_record" android:background="@drawable/bgbuttongreen" android:clickable="true" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginRight="4.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Ghi âm" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_recording" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zing.zalo.uicontrol.AnimImageView android:id="@id/animation_voice_record" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_animspeaker_red_1" />
+            <TextView android:textSize="24.0dip" android:gravity="center_horizontal" android:id="@id/txttime2" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_begin_time" style="@style/DialogText" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_stop" android:background="@drawable/bgbuttonred" android:clickable="true" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginRight="4.0dip">
+                <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Dừng" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_recorded" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zing.zalo.uicontrol.AnimImageView android:id="@id/animation_voice_record2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_animspeaker_n" />
+            <TextView android:textSize="24.0dip" android:gravity="center_horizontal" android:id="@id/txttime3" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/str_begin_time" style="@style/DialogText" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_play_voice" android:background="@drawable/bgbuttonblue" android:clickable="true" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginRight="4.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Nghe lại" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_stop_voice" android:background="@drawable/bgbuttonblue" android:visibility="gone" android:clickable="true" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginRight="4.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Dừng" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/btn_record_2" android:background="@drawable/bgbuttongreen" android:clickable="true" android:layout_width="120.0dip" android:layout_height="50.0dip" android:layout_marginLeft="4.0dip">
+                    <TextView android:textSize="18.0dip" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="Ghi âm lại" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_upload" android:padding="6.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ProgressBar android:id="@id/progress_bar_upload" android:layout_width="250.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginBottom="2.0dip" style="@android:style/Widget.ProgressBar.Horizontal" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_cancel_uploading" android:background="@*android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_delete3" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialog_footer" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/confirm_btn_yes" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+        <Button android:id="@id/confirm_btn_no" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

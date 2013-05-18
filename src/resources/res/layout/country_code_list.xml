@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tv_title_choose_country_code" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mainlayout" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.zing.zalo.uicontrol.IndexableListView android:id="@id/countryCodeList" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" android:fastScrollEnabled="false" />
+        <include android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/empty_layout" />
+    </LinearLayout>
+</LinearLayout>

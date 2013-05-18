@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/chat" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/chatnavbar" android:nextFocusDown="@id/chatlinelist" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" android:layout_alignParentTop="true" layout="@layout/chatnav_row" />
+    <com.zing.zalo.ui.TouchListView android:id="@id/chatlinelist" android:focusable="false" android:focusableInTouchMode="false" android:nextFocusUp="@id/chatnavbar" android:nextFocusDown="@id/chatinputbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="#00000000" android:transcriptMode="disabled" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:layout_above="@id/chatinputbar" android:layout_below="@id/chatnavbar" android:layout_alignParentBottom="true" />
+</RelativeLayout>

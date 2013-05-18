@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="fill_horizontal|center" android:orientation="vertical" android:id="@id/chatinput_row" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.zing.zalo">
+    <include android:id="@id/share_edit_drawing_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/drawview" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/share_edit_input_bar" android:background="@drawable/bg_cmt_input_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="60.0dip">
+        <ImageButton android:layout_gravity="bottom" android:id="@id/btn_chat_function" android:background="@drawable/btn_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="2.5dip" android:src="@drawable/ic_plusmenu" />
+        <ImageButton android:layout_gravity="bottom" android:id="@id/btn_switch_to_voice" android:background="@drawable/btn_default" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.5dip" android:src="@drawable/ic3_voice" />
+        <ImageButton android:layout_gravity="bottom" android:id="@id/btn_switch_to_text" android:background="@drawable/btn_default" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.5dip" android:src="@drawable/ic3_text" />
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <Button android:textStyle="bold" android:textColor="@color/white" android:id="@id/btn_push_to_talk" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="42.0dip" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:text="@string/pushtotalk" android:layout_centerVertical="true" style="?bg_btn_push_to_talk" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_input_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:baselineAligned="false">
+                <com.zing.zalo.uicontrol.CustomEditTextDrawable android:autoLink="none" android:layout_gravity="bottom" android:id="@id/chatinput_text" android:background="@drawable/edit_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxHeight="100.0dip" android:hint="@string/chat_default_text" android:maxEms="10" android:maxLength="300" android:drawableRight="@drawable/ic3_emoticon" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect|textMultiLine" android:imeOptions="actionSend" style="@style/textField" />
+                <Button android:layout_gravity="bottom" android:id="@id/chatinput_send" android:background="@drawable/btn_default" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:minWidth="40.0dip" android:text="Gửi" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutChatFunction" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <GridView android:id="@id/gvChatFunction" android:background="#ffe6e6e6" android:clipChildren="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:stretchMode="columnWidth" android:numColumns="4" android:minHeight="@dimen/grid_chatfunction_hight" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bgheader_layout_chatFunc" android:padding="3.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/emo_tab_bar_height" style="?bgheader">
+            <GridView android:id="@id/gvRecentEmo" android:scrollbars="none" android:clipChildren="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:listSelector="@*android:color/transparent" android:stretchMode="columnWidth" android:numColumns="8" android:minHeight="@dimen/grid_chatfunction_hight" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_recentDelete" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:src="@drawable/ic_backspace" style="?btnheader" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/mEmo_tab" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@id/layoutGridEmo" android:background="@drawable/bg_chat_emoticon" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_gridview_height">
+            <com.zing.zalo.control.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/viewflowindic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/emoticon_circleflow_margin" app:inactiveType="fill" />
+            <com.zing.zalo.control.ViewFlow android:id="@id/viewflow" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sidebuffer="3" />
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/layoutGridSticker" android:background="@drawable/bg_chat_emoticon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_gridview_height">
+            <com.zing.zalo.control.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/viewflowindic_sticker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/emoticon_circleflow_margin" app:inactiveType="fill" />
+            <com.zing.zalo.control.ViewFlow android:id="@id/viewflow_sticker" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sidebuffer="3" />
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/layoutGridFunChar" android:background="@drawable/bg_chat_emoticon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_gridview_height">
+            <com.zing.zalo.control.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/viewflowindic_funChar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/emoticon_circleflow_margin" app:inactiveType="fill" />
+            <com.zing.zalo.control.ViewFlow android:id="@id/viewflow_funChar" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sidebuffer="3" />
+        </FrameLayout>
+        <FrameLayout android:orientation="vertical" android:id="@id/layoutGridStickerVoice" android:background="@drawable/bg_chat_emoticon" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/emoticon_gridview_height">
+            <com.zing.zalo.control.CircleFlowIndicator android:layout_gravity="bottom|center" android:id="@id/viewflowindic_stickervoice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/emoticon_circleflow_margin" app:inactiveType="fill" />
+            <com.zing.zalo.control.ViewFlow android:id="@id/viewflow_stickervoice" android:layout_width="fill_parent" android:layout_height="fill_parent" app:sidebuffer="3" />
+        </FrameLayout>
+        <LinearLayout android:id="@id/layoutStickerList" android:background="@drawable/bg_emoticon" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <HorizontalScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:id="@id/lvStickerList" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+            <ImageButton android:id="@id/btn_AddStickers" android:background="@drawable/bg_btn_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/ic_plusmenu" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layoutFunCharList" android:background="@drawable/bg_emoticon" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <HorizontalScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:id="@id/lvFunCharList" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+            <ImageButton android:id="@id/btn_AddFunChar" android:background="@drawable/bg_btn_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/ic_plusmenu" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/layoutStickerVoiceList" android:background="@drawable/bg_emoticon" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <HorizontalScrollView android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <LinearLayout android:id="@id/lvStickerVoiceList" android:paddingTop="3.0dip" android:paddingBottom="3.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </HorizontalScrollView>
+            <ImageButton android:id="@id/btn_AddStickerVoice" android:background="@drawable/bg_btn_game" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/ic_plusmenu" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bgheader_layout_tabbar" android:layout_width="fill_parent" android:layout_height="@dimen/emo_tab_bar_height" style="?bgheader">
+            <HorizontalScrollView android:layout_width="0.0dip" android:layout_height="@dimen/emo_tab_bar_height" android:layout_weight="1.0">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/tab_Emo" android:background="@color/white" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/str_tab_emoticon" />
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tab_Stick" android:background="@*android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/str_tab_sticker" />
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tab_StickerVoice" android:background="@*android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/str_tab_sticker_voice" />
+                    <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tab_FunChar" android:background="@*android:color/transparent" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/str_tab_funchar" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <ImageButton android:id="@id/btn_delete" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:src="@drawable/ic_backspace" style="?btnheader" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

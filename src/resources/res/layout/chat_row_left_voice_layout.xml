@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left" android:id="@id/chat_left_voice_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="top|left|center" android:orientation="horizontal" android:id="@id/chat_left_action_voice_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="36.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/chat_left_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/minwidth_bubble_chatcontent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/nameSenderGroup" android:layout_gravity="center_vertical" android:id="@id/chat_left_nameSender_voice" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:maxWidth="@dimen/maxwidth_namesender_chatcontent" android:maxLines="1" android:singleLine="true" />
+            <RelativeLayout android:orientation="horizontal" android:background="@drawable/bgd2_sound_top" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.zing.zalo.uicontrol.AnimImageView android:id="@id/chat_left_animation_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sound_anim02" />
+                <TextView android:textAppearance="@style/chatrow_time_media" android:gravity="center" android:id="@id/chat_left_timer_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:text="@string/str_default_formattime1" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:id="@id/chat_left_button_status_voice" android:background="@drawable/bgd2_sound_bottom" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/ic_play_status" />
+        </LinearLayout>
+        <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom" android:id="@id/chat_left_txt_time_voice" android:background="@drawable/chat_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" />
+        <ImageView android:id="@id/chat_left_icon_status_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" />
+        <ProgressBar android:layout_gravity="left|center" android:id="@id/chat_left_progress_download_voice" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

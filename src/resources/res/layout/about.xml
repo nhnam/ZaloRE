@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="top" android:orientation="vertical" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/layout_bgtitleabout" android:layout_width="fill_parent" android:layout_height="110.0dip" style="?bgtitleabout">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/logo_zalo_about" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/white" android:gravity="center" android:id="@id/tvaboutversion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_version" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutspecial" android:background="@drawable/bggroupboxtop" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_function_app" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:id="@id/layoutguide" android:background="@drawable/bggroupboxmiddle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_guide_app" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutzingphone" android:background="@drawable/bggroupboxbottom" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_zingphoneproduct_app" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutpolicyabout" android:background="@drawable/bggroupboxbottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_legal_app" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutupdateversion" android:background="@drawable/bggroupboxtop" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:id="@id/updateVersion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_updateversion_app" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutwebsite" android:background="@drawable/bggroupboxmiddle" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:id="@id/website" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_title_website_app" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_website_app" android:layout_toRightOf="@id/website" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutemail" android:background="@drawable/bggroupboxbottom" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:id="@id/email" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_title_email_app" android:layout_centerVertical="true" />
+                <TextView android:textSize="16.0dip" android:textColor="@color/tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_email_app" android:layout_toRightOf="@id/email" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutratezalo" android:background="@drawable/bggroupboxtop" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/str_ratezalo" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutzalozme" android:background="@drawable/bggroupboxmiddle" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/menu_zalozme" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <RelativeLayout android:orientation="vertical" android:id="@id/layoutzalofb" android:background="@drawable/bggroupboxbottom" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <TextView android:textSize="16.0dip" android:textColor="@color/text_about" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="@string/menu_zalofb" android:layout_centerVertical="true" />
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <View android:layout_width="fill_parent" android:layout_height="10.0dip" />
+            <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="@style/about_text" android:textSize="12.0dip" android:textColor="@color/tab_text" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/about_copyright" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

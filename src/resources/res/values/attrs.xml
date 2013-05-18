@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="maxRows" format="integer" />
+    <attr name="editTextLayout" format="reference" />
+    <attr name="bubbleLayout" format="reference" />
+    <attr name="sectionLayout" format="reference" />
+    <attr name="horizontalSpacing" format="dimension" />
+    <attr name="verticalSpacing" format="dimension" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="debugDraw" format="boolean" />
+    <attr name="layout_newLine" format="boolean" />
+    <attr name="layout_horizontalSpacing" format="dimension" />
+    <attr name="layout_verticalSpacing" format="dimension" />
+    <attr name="show_pictures" format="boolean" />
+    <attr name="extra_fields" format="string" />
+    <attr name="show_title_bar" format="boolean" />
+    <attr name="title_text" format="string" />
+    <attr name="done_button_text" format="string" />
+    <attr name="title_bar_background" format="reference" />
+    <attr name="done_button_background" format="reference" />
+    <attr name="multi_select" format="boolean" />
+    <attr name="radius_in_meters" format="integer" />
+    <attr name="results_limit" format="integer" />
+    <attr name="search_text" format="string" />
+    <attr name="show_search_box" format="boolean" />
+    <attr name="confirm_logout" format="boolean" />
+    <attr name="fetch_user_info" format="boolean" />
+    <attr name="login_text" format="string" />
+    <attr name="logout_text" format="string" />
+    <attr name="preset_size">
+        <enum name="small" value="-2" />
+        <enum name="normal" value="-3" />
+        <enum name="large" value="-4" />
+    </attr>
+    <attr name="viewAbove" format="reference" />
+    <attr name="viewBehind" format="reference" />
+    <attr name="behindOffset" format="dimension" />
+    <attr name="behindWidth" format="dimension" />
+    <attr name="behindScrollScale" format="float" />
+    <attr name="touchModeAbove">
+        <enum name="margin" value="0" />
+        <enum name="fullscreen" value="1" />
+    </attr>
+    <attr name="touchModeBehind">
+        <enum name="margin" value="0" />
+        <enum name="fullscreen" value="1" />
+    </attr>
+    <attr name="shadowDrawable" format="reference" />
+    <attr name="shadowWidth" format="dimension" />
+    <attr name="behindFadeEnabled" format="boolean" />
+    <attr name="behindFadeDegree" format="float" />
+    <attr name="selectorEnabled" format="boolean" />
+    <attr name="selectorDrawable" format="reference" />
+    <attr name="backgroundmain" format="reference" />
+    <attr name="bgheader" format="reference" />
+    <attr name="btnheader" format="reference" />
+    <attr name="tab_bg_top_left" format="reference" />
+    <attr name="tab_bg_top_middle" format="reference" />
+    <attr name="tab_bg_top_right" format="reference" />
+    <attr name="tab2_bg_top_left" format="reference" />
+    <attr name="tab2_bg_top_right" format="reference" />
+    <attr name="bg_btn_push_to_talk" format="reference" />
+    <attr name="twIndexViewHandlePosition">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="twIndexViewIndexInterval" format="integer" />
+    <attr name="ptrAdapterViewBackground" format="reference|color" />
+    <attr name="ptrHeaderBackground" format="reference|color" />
+    <attr name="ptrHeaderTextColor" format="reference|color" />
+    <attr name="ptrHeaderSubTextColor" format="reference|color" />
+    <attr name="ptrMode">
+        <flag name="disabled" value="0x00000000" />
+        <flag name="pullDownFromTop" value="0x00000001" />
+        <flag name="pullUpFromBottom" value="0x00000002" />
+        <flag name="both" value="0x00000003" />
+    </attr>
+    <attr name="ptrShowIndicator" format="reference|boolean" />
+    <attr name="ptrDrawable" format="reference" />
+    <attr name="ptrOverScroll" format="reference|boolean" />
+    <attr name="ptrHeaderTextAppearance" format="reference" />
+    <attr name="ptrSubHeaderTextAppearance" format="reference" />
+    <attr name="sidebuffer" format="integer" />
+    <attr name="activeColor" format="color" />
+    <attr name="inactiveColor" format="color" />
+    <attr name="radius" format="dimension" />
+    <attr name="centered" format="boolean" />
+    <attr name="fadeOut" format="integer" />
+    <attr name="inactiveType">
+        <flag name="stroke" value="0x00000000" />
+        <flag name="fill" value="0x00000001" />
+    </attr>
+    <attr name="activeType">
+        <flag name="stroke" value="0x00000000" />
+        <flag name="fill" value="0x00000001" />
+    </attr>
+    <attr name="menuSize" format="dimension" />
+    <attr name="expandDuration" format="integer" />
+    <attr name="closeOnClick" format="boolean" />
+    <attr name="totalSpacingDegree" format="float" />
+    <attr name="satelliteDistance" format="dimension" />
+    <attr name="marginFromBottom" format="dimension" />
+    <attr name="mainImage" format="reference" />
+    <attr name="bgtitleabout" format="reference" />
+    <attr name="button" format="string" />
+    <attr name="entries" format="reference" />
+    <attr name="galleryStyle" format="reference" />
+    <attr name="gravity" format="integer" />
+    <attr name="animationDuration" format="integer" />
+    <attr name="unselectedAlpha" format="float" />
+    <attr name="spacing" format="dimension" />
+</resources>

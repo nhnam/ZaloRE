@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/item_list_default_minheight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff808080" android:id="@id/phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:textSize="20.0dip" android:textStyle="bold" android:textColor="@color/itemlist_text" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:lines="1" android:singleLine="true" android:layout_toLeftOf="@id/phone" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+</RelativeLayout>

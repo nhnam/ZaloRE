@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="280.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/dialog_header_default" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0dip" android:textStyle="bold" android:textColor="@color/white" android:id="@id/confirm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Xác nhận" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/confirm_content" android:background="@drawable/dialog_center" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@drawable/im_sms_confirm" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="30.0dip" android:textStyle="bold" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@id/phoneNumber" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0909251393" android:maxLines="1" android:phoneNumber="true" />
+        <View android:background="#30545454" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textSize="12.0dip" android:textStyle="italic" android:textColor="@color/gray_talk" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/input_phone05" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/dialog_footer" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/confirm_btn_yes" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+        <Button android:id="@id/confirm_btn_no" android:background="@drawable/btn_default" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="0.5" />
+    </LinearLayout>
+</LinearLayout>

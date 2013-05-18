@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_title_zmID" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_zm_menu" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_head_location" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layoutloginzm" android:padding="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="14.0dip" android:textColor="@color/login_text_hint" android:gravity="center" android:id="@id/txtlayoutzmID" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_zmlinkdescription" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutzmID" android:background="@drawable/btn_default_center" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="20.0dip">
+            <TextView android:textSize="14.0dip" android:textStyle="bold" android:textColor="@color/login_text_btsdt" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_bt_link_zmID" android:drawableLeft="@drawable/ic_zing_white" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/phoneList" android:visibility="visible" android:scrollbars="vertical" android:fadingEdge="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="top|center" android:id="@id/loading_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/PROCESSING" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/friendList_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+        <ImageView android:id="@id/img_listEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/txtemptydes_color" android:gravity="center_horizontal" android:id="@id/txt_listEmpty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/facebook_mag_emptyList" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:id="@id/chat_left_vip_audio_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/chat_left_vip_audio_lo" android:background="@drawable/chat_left_bg" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="top" android:layout_width="60.0dip" android:layout_height="60.0dip">
+            <ImageView android:id="@id/chat_left_vip_audio_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/attach_gallery_96" android:scaleType="centerCrop" android:adjustViewBounds="true" android:contentDescription="@string/str_desImg" />
+            <ImageView android:layout_gravity="bottom" android:background="#55000000" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="20.0dip" android:src="@drawable/ico_mp3msg" android:scaleType="fitStart" android:adjustViewBounds="true" android:contentDescription="@string/str_desImg" />
+        </FrameLayout>
+        <TextView android:textAppearance="@style/chatrow_text" android:textColorLink="@color/blue_hint" android:gravity="center_vertical" android:autoLink="all" android:linksClickable="true" android:id="@id/chat_left_vip_audio_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/str_msgDefault" android:drawableRight="@drawable/ic_head_next" android:drawablePadding="5.0dip" />
+    </LinearLayout>
+    <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom" android:id="@id/chat_left_vip_audio_txt_time_image" android:background="@drawable/chat_time_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" />
+    <ImageView android:id="@id/chat_left_vip_audio_icon_status_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_error" android:contentDescription="@string/str_desImg" />
+</LinearLayout>

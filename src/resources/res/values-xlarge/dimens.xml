@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="slidingmenu_offset">500.0dip</dimen>
+    <dimen name="feed_photo_size">650.0dip</dimen>
+    <dimen name="grid_image_width">260.0dip</dimen>
+    <dimen name="grid_image_hight">260.0dip</dimen>
+</resources>

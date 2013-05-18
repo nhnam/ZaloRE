@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:gravity="right|center" android:src="@drawable/htab2_left_o_01" android:antialias="false" android:filter="false" android:dither="false"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

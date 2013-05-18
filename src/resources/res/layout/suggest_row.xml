@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/contact_row" android:background="@color/bg_default" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/info_contact_row" android:background="@drawable/contact_bg_withfocus_default" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/item_list_default_minheight">
+        <RelativeLayout android:layout_gravity="center_vertical" android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="6.0dip">
+            <ImageView android:id="@id/buddy_dp" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/default_avatar" android:contentDescription="@string/str_desImg" style="@style/myImageView" />
+            <ImageView android:gravity="center" android:id="@id/ic_type_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginBottom="2.0dip" android:src="@drawable/ic_dba_small" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@string/str_desImg" style="@style/myImageView" />
+        </RelativeLayout>
+        <TextView android:textSize="16.0dip" android:textColor="@color/itemlist_text" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:maxWidth="160.0dip" android:lines="1" android:singleLine="true" />
+        <LinearLayout android:gravity="right|center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0dip" android:textColor="#ff808080" android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/phone" android:background="@drawable/bg_dba_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:maxLines="2" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

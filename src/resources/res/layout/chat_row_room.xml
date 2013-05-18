@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/time_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+        <View android:layout_gravity="center_vertical" android:background="#45545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="10.0dip" android:layout_weight="1.0" />
+        <TextView android:textAppearance="@style/chat_timer_text" android:id="@id/txt_time" android:background="@drawable/chat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="@string/str_default_formattime" />
+        <View android:layout_gravity="center_vertical" android:background="#45545454" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/update_info_row" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:layout_marginRight="3.0dip" android:layout_below="@id/time_row" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/white" android:gravity="center" android:id="@id/txt_updateGroupActivity" android:background="@drawable/chat_time" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/chat_row" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/chat_right_row" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.zing.zalo.component.ChatRightTextRoom android:id="@id/chat_right_text_room" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/chat_left_row" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="top|left|center" android:id="@id/chat_left_dp" android:visibility="gone" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/default_avatar" />
+            <com.zing.zalo.component.ChatLeftTextRoom android:id="@id/chat_left_text_room" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

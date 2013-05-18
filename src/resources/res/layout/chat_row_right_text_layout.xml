@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="right|center" android:id="@id/chat_right_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/chat_timer_text" android:layout_gravity="bottom" android:id="@id/chat_right_txt_time_message" android:background="@drawable/chat_time_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip" android:text="@string/str_default_formattime1" />
+    <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/chat_right_message_lo" android:background="@drawable/chat_right_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/minwidth_bubble_chatcontent">
+        <TextView android:textAppearance="@style/chatrow_text" android:textColorLink="@color/blue_hint" android:gravity="left|center" android:linksClickable="true" android:id="@id/chat_right_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_default_cc_msg" />
+        <LinearLayout android:gravity="left|center" android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/chat_right_message_state_lo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <ImageView android:layout_gravity="left|center" android:id="@id/chat_right_icon_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_sendmsg_sending" android:contentDescription="@string/str_desImg" />
+            <TextView android:textSize="@dimen/chat_status_text_size" android:textColor="@color/light_gray" android:layout_gravity="center_vertical" android:id="@id/chat_right_txt_state_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/sending_message_state" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+[{
+ "message":"Please be advised: These images may contain graphic content.\n\nFor information and support with suicide or self-harm, visit",
+ "url":"http://befrienders.org",
+ "tags":["suicide","suicidal","selfharm","selfinjury","cutting","cutter"],
+ "category":"self_harm"
+ },
+ {"message":"Please be advised: These images may contain graphic content.\n\nFor information and support with eating disorders, visit",
+ "url":"http://nationaleatingdisorders.org",
+ "tags":["anorexia","anorexic","ana","bulimia","bulimic","purging","mia"],
+ "category":"eating_disorders"
+ }
+ ]

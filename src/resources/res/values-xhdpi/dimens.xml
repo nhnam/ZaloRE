@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="feed_photo_size">300.0dip</dimen>
+    <dimen name="grid_image_width">126.0dip</dimen>
+    <dimen name="grid_image_hight">126.0dip</dimen>
+    <dimen name="grid_chatfunction_width">80.0dip</dimen>
+    <dimen name="grid_chatfunction_hight">80.0dip</dimen>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/root_backgroundmain" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?backgroundmain"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/bgheader_layout" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" style="?btnheader" />
+        <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/findandadd_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/btn_top_bar_menu" android:padding="4.0dip" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic2_head_location" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="?btnheader" />
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@id/layout_add" android:background="@drawable/contact_bg_withfocus_default" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/item_list_default_minheight">
+        <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="58.0dip" android:text="@string/add_friend_by_phone_zing" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_next" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" />
+        <ImageView android:layout_width="46.0dip" android:layout_height="46.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/avatar_themban" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/str_desImg" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/loading_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+        <ProgressBar android:layout_gravity="center" android:id="@id/progressBar1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:progressBarStyleInverse" />
+        <TextView android:textSize="16.0dip" android:textColor="@color/black" android:layout_gravity="top|center" android:id="@id/loading_textview" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Đang tìm kiếm..." />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000">
+        <ImageView android:id="@id/img_listEmpty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/str_desImg" />
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/txtemptydes_color" android:gravity="center_horizontal" android:id="@id/txt_listEmpty" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/empty_suggestFriend" />
+    </LinearLayout>
+    <com.zing.zalo.uicontrol.pulltorefresh.PullToRefreshListView android:id="@id/suggestptrListView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" android:divider="#00000000" android:dividerHeight="0.0dip" android:choiceMode="singleChoice" />
+</LinearLayout>

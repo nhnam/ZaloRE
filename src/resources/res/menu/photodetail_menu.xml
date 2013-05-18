@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_abuse" android:id="@id/btn_photo_reportabuse" android:title="@string/str_menuphoto_reportabuse" />
+</menu>

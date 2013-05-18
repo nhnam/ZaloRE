@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_userinfo" android:id="@id/userinfo" android:title="@string/str_optionM_userInfo" />
+    <item android:icon="@drawable/ico_add_addr" android:id="@id/addfriendchat" android:title="@string/str_addfriendchat" />
+    <item android:icon="@drawable/ic_delchatmsg" android:id="@id/cleanallmsg" android:title="@string/str_optionM_clearallMsg" />
+    <item android:icon="@drawable/ico_pop_ignore" android:id="@id/blockfriend" android:title="@string/str_optionM_blockuser" />
+    <item android:icon="@drawable/ic_abuse" android:id="@id/reportspam" android:title="@string/str_optionM_reportSpam" />
+    <item android:icon="@drawable/ic_grp_members" android:id="@id/groupInfo" android:title="@string/str_group_info" />
+    <item android:icon="@drawable/ic_grp_exit" android:id="@id/leaveGroup" android:title="@string/str_group_leave" />
+    <item android:icon="@drawable/ic_grp_members" android:id="@id/roomInfo" android:title="@string/str_rooms_info" />
+    <item android:icon="@drawable/ic_grp_exit" android:id="@id/leaveRoom" android:title="@string/str_rooms_menu_leave" />
+    <item android:icon="@drawable/ic_abuse" android:id="@id/showMembersRoomUpdate" android:title="@string/str_optionM_showUpdateRoom" />
+    <item android:icon="@drawable/ic_ear" android:id="@id/enableInEarSpeaker" android:title="@string/str_optionM_enableInEar" />
+</menu>

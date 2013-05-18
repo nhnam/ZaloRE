@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left|center" android:orientation="horizontal" android:id="@id/bgheader_layout" android:layout_width="fill_parent" android:layout_height="@dimen/top_tab_bar_height" style="?bgheader"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/myinfo_row" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_weight="0.1">
+        <ImageButton android:id="@id/btn_back" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_head_back" android:contentDescription="@string/description" style="?btnheader" />
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/chatnav_name" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="11.0dip" android:textStyle="normal" android:textColor="#ffffffff" android:layout_gravity="center_horizontal" android:id="@id/chatnav_time_online" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/img_subcibe" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/ic_vipmsg_off" android:contentDescription="@string/str_desImg" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/img_inear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/ic_ear2" android:contentDescription="@string/str_desImg" />
+    <ImageButton android:layout_gravity="center_vertical" android:id="@id/btn_chat_profile" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/ic_head_userinfo" android:contentDescription="@string/str_desImg" style="?btnheader" />
+</LinearLayout>

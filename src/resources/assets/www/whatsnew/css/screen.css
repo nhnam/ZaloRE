@@ -1,0 +1,11 @@
+body{color:#333;margin:0;-webkit-user-select:none;word-wrap:break-word; background:#eee;}
+body {font-family:Helvetica;font-size:14px;}
+
+a,img{border:none}
+a{color:#466da4;cursor:pointer;display:inline;text-decoration:inherit;text-decoration:none}
+
+h1 {font-size:16px; margin:0 0 8px 0; padding:0;}
+p {margin:0 0 10px 0; line-height:18px;}
+	.logo {text-align:center; padding:10px 0 0 0; display:none;}
+	.content {background:#FFF; padding:10px;}
+	.hili01 {margin-top:20px; font-style:italic; color:#666;}
